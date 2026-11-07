@@ -1,5 +1,5 @@
 {
- "schemaVersion": 5,
+ "schemaVersion": 6,
  "projeto": "Laboratório de Transformação Social e Urbana — RJ",
  "geradoEm": "2026-11-07",
  "fonte": "Planilha de Conformidade (exportada em 07/11/2026), pasta oficial do Laboratório RJ",
@@ -13851,5 +13851,56 @@
    "nome": "Praça Padre Cícero — novembro",
    "pastaId": "1niO8MYbxGQO88dGADBgKxm6RecS2Q-NQ"
   }
- ]
+ ],
+ "oficinasIndividualizadasJacarezinho": {
+  "10": {
+   "titulo": "Oficina de Graffiti — sessão 1",
+   "data": "25/06/2026",
+   "status": "OFICINA_DISTINTA_CONFIRMADA",
+   "fonteConfirmacao": "Confirmação da coordenação: duas oficinas de Graffiti no mesmo dia, em horários diferentes.",
+   "documentos": [
+    {
+     "nome": "Plano de aula — Graffiti (Dani)",
+     "fileId": "1P5W8eXOti7LpYL5yUNL4LP8ZT_GgXZNu",
+     "situacao": "Plano localizado; associação à sessão e horário sujeitos à conferência."
+    }
+   ],
+   "nota": "Oficina realizada em horário distinto da sessão 2. Horário exato e fotografias por sessão ainda não individualizados."
+  },
+  "11": {
+   "titulo": "Oficina de Graffiti — sessão 2",
+   "data": "25/06/2026",
+   "status": "OFICINA_DISTINTA_CONFIRMADA",
+   "fonteConfirmacao": "Confirmação da coordenação: duas oficinas de Graffiti no mesmo dia, em horários diferentes.",
+   "documentos": [
+    {
+     "nome": "Plano de aula — Graffiti",
+     "fileId": "13A9cjBicytweHzJyBOv5qbFLxMk0NwaY",
+     "situacao": "Plano localizado; associação à sessão e horário sujeitos à conferência."
+    }
+   ],
+   "nota": "Oficina realizada em horário distinto da sessão 1. Horário exato e fotografias por sessão ainda não individualizados."
+  },
+  "12": {
+   "titulo": "Oficina de Introdução à Realização Audiovisual",
+   "data": "26/06/2026",
+   "status": "PLANO_E_LISTA_LOCALIZADOS",
+   "documentos": [
+    {
+     "nome": "Plano de aula — Audiovisual (Rafael Meira)",
+     "fileId": "11bBBR5m0dUc9IPRom2aBArgxrXbu-m_l",
+     "situacao": "Plano localizado; fotos por atividade ainda em conferência."
+    }
+   ],
+   "nota": "Plano de aula e lista de presença localizados. A lista não é publicada no portal; a associação das fotos permanece em conferência."
+  },
+  "13": {
+   "titulo": "Quarta capacitação — atividade a identificar",
+   "data": "",
+   "status": "DOCUMENTACAO_A_LOCALIZAR",
+   "documentos": [],
+   "nota": "Entrega prevista no Plano de Trabalho. Não atribuir fotos da mesma pasta nem contar outra oficina automaticamente."
+  }
+ },
+ "statusSeparacaoFotosJacarezinho": "86 registros de mídia em acervo comum; nenhuma foto individualizada às sessões de Graffiti sem confirmação de origem."
 }
