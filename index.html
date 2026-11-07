@@ -39,6 +39,13 @@
 .action-card .course-unassigned{background:#f4f8fc;border:1px solid #dbe8ef;border-radius:8px;padding:14px;color:#4e6a7e;font-size:11px;margin:12px 0}
 .course-source-links{display:flex;flex-wrap:wrap;gap:7px;margin:9px 0}
 .course-source-links button{border:1px solid #abc6d9;border-radius:8px;background:#eef9fc;color:#075a70;padding:8px 11px;font:700 10px Montserrat}
+
+.jac-activity{background:#f2f8fc;border:1px solid #d4e4ef;border-radius:9px;padding:11px 13px;margin:10px 0}
+.jac-activity strong{display:block;color:#0c405a;font-size:12px;margin-bottom:5px}
+.jac-activity span{display:block;color:#526981;font-size:11px;line-height:1.55}
+.jac-note{color:#64778b;font:600 10px Montserrat,sans-serif;margin:7px 0}
+.jac-doc-actions{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+.jac-doc-actions a{display:inline-flex;text-decoration:none;border:1px solid #b4c9da;border-radius:8px;background:#fff;color:#092040;padding:9px 13px;font:700 11px Montserrat,sans-serif}
 </style>
 </head>
 <body>
@@ -84,7 +91,7 @@ const $=id=>document.getElementById(id), esc=v=>String(v??'').replace(/[&<>"']/g
 const root='https://drive.google.com/file/d/', thumb=(id,s='w540')=>'https://drive.google.com/thumbnail?id='+encodeURIComponent(id)+'&sz='+s;
 const mediaURL=m=>root+encodeURIComponent(m.id)+'/view';
 const plan=window.LRJ_PLANO||{entregas:[],territorios:['Jacarezinho','Rocinha','Rio das Pedras']};
-const state={media:[],docs:{},courseCollections:{},courseMapping:{},courseTerritory:"",filtered:[],page:1,albumKey:'',detailSeq:[],detailMeta:null,lbSeq:[],lbIndex:0,month:'',loaded:false};
+const state={media:[],docs:{},courseCollections:{},courseMapping:{},workshopsJac:{},courseTerritory:"",filtered:[],page:1,albumKey:'',detailSeq:[],detailMeta:null,lbSeq:[],lbIndex:0,month:'',loaded:false};
 const KEY='lrj_auth_session_20261107';
 // This hash-based front-end entry screen is only a visual convenience, NOT a security boundary on public GitHub Pages.
 const passwordHash='487d5db874a3e7daf305e5f5be96943da75eddd0aa7fe5065849620eea1373c0',pepper='LRJ-portal-v2-2026';
@@ -99,7 +106,7 @@ const hasImage=m=>m.tipo==='FOTO';
 function safeMedia(list){return list.filter(m=>/^[A-Za-z0-9_-]{15,}$/.test(m.id)&&['FOTO','VIDEO'].includes(m.tipo))}
 function imgEl(m,alt='Fotografia da atividade') {return `<img loading="lazy" src="${thumb(m.id,'w550')}" alt="${esc(alt)}" onerror="this.outerHTML='<div class=&quot;failpic&quot;>Prévia não disponível<br>Abrir original no Drive</div>'">`}
 async function loadCatalog(){if(state.loaded)return;
- try{const r=await fetch((window.LRJ_CONFIG?.FONTE_EVIDENCIAS||'./evidencias.json')+'?v=20261107-inventario-v5',{cache:'no-store'});if(!r.ok)throw Error('HTTP '+r.status);const obj=await r.json();const unicos=new Set();state.media=safeMedia(obj.media||[]).filter(m=>{if(unicos.has(m.id))return false;unicos.add(m.id);return true});state.docs=obj.contagemDocumentosPorEntrega||{};state.courseCollections=obj.colecoesDeCapacitacaoSemTurma||{};state.courseMapping=obj.cursoPastaMapeada||{};state.loaded=true;initFilters();renderHome();renderActions();renderAlbums();renderGallery();renderTerritories();$('update-info').textContent='Acervo consultado em '+(obj.geradoEm||'07/11/2026')+' · cursos vinculados por pastas oficiais e álbuns territoriais · revisão documental pendente';}
+ try{const r=await fetch((window.LRJ_CONFIG?.FONTE_EVIDENCIAS||'./evidencias.json')+'?v=20261107-jac-oficinas-v6',{cache:'no-store'});if(!r.ok)throw Error('HTTP '+r.status);const obj=await r.json();const unicos=new Set();state.media=safeMedia(obj.media||[]).filter(m=>{if(unicos.has(m.id))return false;unicos.add(m.id);return true});state.docs=obj.contagemDocumentosPorEntrega||{};state.courseCollections=obj.colecoesDeCapacitacaoSemTurma||{};state.courseMapping=obj.cursoPastaMapeada||{};state.workshopsJac=obj.oficinasIndividualizadasJacarezinho||{};state.loaded=true;initFilters();renderHome();renderActions();renderAlbums();renderGallery();renderTerritories();$('update-info').textContent='Acervo consultado em '+(obj.geradoEm||'07/11/2026')+' · cursos vinculados por pastas oficiais e álbuns territoriais · revisão documental pendente';}
  catch(e){state.loaded=false;$('quick-grid').innerHTML='<div class="empty">Não foi possível carregar o arquivo evidencias.json. Confira se ele está na mesma pasta do index.html no GitHub.</div>';$('gallery-grid').innerHTML='<div class="empty">O catálogo não carregou: '+esc(e.message)+'</div>';$('actions-grid').innerHTML='<div class="empty">Catálogo de fotos indisponível.</div>';console.warn('LRJ:',e)}}
 function switchView(section,push=true){document.querySelectorAll('.section').forEach(n=>n.classList.toggle('active',n.id===section));document.querySelectorAll('.nav [data-nav]').forEach(n=>n.classList.toggle('active',n.dataset.nav===section));if(push)location.hash=section;window.scrollTo({top:0,behavior:'instant'})}
 document.addEventListener('click',e=>{const b=e.target.closest('[data-nav]');if(b){switchView(b.dataset.nav);return}const action=e.target.closest('[data-action]');if(action){openAction(+action.dataset.action);return}const album=e.target.closest('[data-album]');if(album){chooseAlbum(album.dataset.album);return}const photo=e.target.closest('[data-photo-id]');if(photo){const id=photo.dataset.photoId;const seq=state.detailSeq.length&&$('detail-overlay').hidden===false?state.detailSeq:state.media;showLightbox(seq,id);return}const browse=e.target.closest('[data-gallery-category]');if(browse){$('g-category').value=browse.dataset.galleryCategory||'';$('g-territory').value=browse.dataset.galleryTerritory||'';$('g-search').value='';$('g-type').value=browse.dataset.galleryType||'';$('g-meta').value='';$('g-month').value='';state.albumKey='';state.deliveryFilter=0;state.courseTerritory='';state.page=1;renderGallery();switchView('galeria')}const courseTerritory=e.target.closest('[data-course-territory]');if(courseTerritory){showCourseTerritory(courseTerritory.dataset.courseTerritory);return}const territoryActions=e.target.closest('[data-territory-actions]');if(territoryActions){$('a-territory').value=territoryActions.dataset.territoryActions||'';renderActions();switchView('acoes')}});
@@ -131,10 +138,23 @@ function renderCollections(){const t=$('a-territory').value,meta=$('a-meta').val
  $('course-collections').innerHTML=a.map(c=>{const n=mediaCounts(c.items),picks=c.items.filter(m=>m.tipo==='FOTO').slice(0,4),src=c.items[0]?.pastaId;
  return '<article class="collection-card"><div class="collection-tag">'+esc(c.territory)+' · Álbum datado</div><h3>'+esc(c.title)+'</h3><div class="mini-strip">'+picks.map(m=>'<button data-photo-id="'+esc(m.id)+'">'+imgEl(m)+'</button>').join('')+'</div><div class="countline">'+countsText(c.items)+'</div><p>Registros da pasta original, organizados separadamente dos números de turma ainda não confirmados.</p><div class="card-actions"><button class="btn btn-dark" data-album="'+esc(c.key)+'">Abrir álbum completo</button>'+(src?'<a class="btn btn-outline" href="https://drive.google.com/drive/folders/'+encodeURIComponent(src)+'" target="_blank" rel="noopener noreferrer">Pasta original</a>':'')+'</div></article>'}).join('');
 }
+function workshopFor(p){return p.territorio==='Jacarezinho'?state.workshopsJac[String(p.numero)]||null:null}
+function workshopDocuments(w){return (w?.documentos||[]).map(d=>{
+ const id=String(d.fileId||'');if(!/^[A-Za-z0-9_-]{20,}$/.test(id))return '';
+ return '<a href="https://drive.google.com/file/d/'+encodeURIComponent(id)+'/view" target="_blank" rel="noopener noreferrer">'+esc(d.nome)+' ↗</a>';
+ }).join('')}
 function renderActions(){const search=$('a-search').value.trim().toLocaleLowerCase('pt-BR'),meta=$('a-meta').value,territ=$('a-territory').value;
- const list=plan.entregas.filter(p=>(!meta||p.meta.startsWith(meta))&&(!territ||p.territorio===territ)&&(!search||[p.titulo,p.territorio,p.meta,p.numero,p.comprovantes].join(' ').toLocaleLowerCase('pt-BR').includes(search)));
+ const list=plan.entregas.filter(p=>(!meta||p.meta.startsWith(meta))&&(!territ||p.territorio===territ)&&(!search||[p.titulo,p.territorio,p.meta,p.numero,p.comprovantes,workshopFor(p)?.titulo,workshopFor(p)?.data].join(' ').toLocaleLowerCase('pt-BR').includes(search)));
  $('actions-count').textContent=list.length+' itens encontrados no plano de trabalho';
- $('actions-grid').innerHTML=list.map(p=>{const m=itemMedia(p.numero),doc=Number(state.docs[p.numero]||0),isCourse=metaNum(p.meta)===3&&/curso|capacitação|oficina/i.test(p.titulo),col=!m.length&&isCourse?realCollections(p.territorio):[],provisional=col.length>0;
+ $('actions-grid').innerHTML=list.map(p=>{
+ const w=workshopFor(p),m=itemMedia(p.numero),doc=Number(state.docs[p.numero]||0);
+ if(w){const confirmed=p.numero!==13;
+ const status=confirmed?'Oficina identificada':'Documentação pendente';
+ const title='<h3>'+esc(p.titulo)+'</h3><div class="jac-activity"><strong>'+esc(w.titulo)+(w.data?' · '+esc(w.data):'')+'</strong><span>'+esc(w.nota)+'</span></div>';
+ const docLinks=workshopDocuments(w);
+ return '<article class="action-card"><div class="card-overline">Item '+p.numero+' · Jacarezinho <span class="status '+(confirmed?'found':'')+'">'+status+'</span></div>'+title+'<div class="sub">Meta 3 · comprovação prevista: '+esc(p.comprovantes)+'</div>'+(docLinks?'<div class="jac-doc-actions">'+docLinks+'</div>':'')+'<div class="countline"><span class="chip">'+(w.documentos||[]).length+' plano de aula relacionado</span><span class="chip muted">Fotos: acervo comum, sem duplicação</span></div><div class="card-actions"><button class="btn btn-dark" data-action="'+p.numero+'">'+(confirmed?'Ver comprovações':'Ver situação')+'</button></div></article>';
+ }
+ const isCourse=metaNum(p.meta)===3&&/curso|capacitação|oficina/i.test(p.titulo),col=!m.length&&isCourse?realCollections(p.territorio):[],provisional=col.length>0;
  const subtitle=m.length&&state.courseMapping[p.numero]?.titulo?'<div class="course-lesson">'+esc(state.courseMapping[p.numero].titulo)+'</div>':'';
  const status=m.length?'Evidências da atividade':provisional?'Álbuns disponíveis':'Em conferência';
  const sample=m.length?'<div class="mini-strip">'+sampleMedia(m)+'</div>':provisional?'<div class="course-unassigned">'+col.length+' álbuns da capacitação encontrados neste território. Abra por data abaixo; sem repetir fotografias em quatro turmas.</div>':'<div class="mini-strip">'+sampleMedia(m)+'</div>';
@@ -146,6 +166,18 @@ function renderActions(){const search=$('a-search').value.trim().toLocaleLowerCa
 }
 function setDetail(list){state.detailSeq=list;$('detail-gallery').innerHTML=list.map(mediaCard).join('')||'<div class="empty">Nenhuma mídia específica localizada. Consulte o acervo territorial provisório, quando existir.</div>';}
 function openAction(num){const p=plan.entregas.find(x=>x.numero===num);if(!p)return;
+ const w=workshopFor(p);
+ if(w){const confirmed=+num!==13;
+ state.detailMeta={num,selected:[],courseFallback:false,category:'Capacitação / atividade',territory:'Jacarezinho'};
+ $('detail-overline').textContent='Entrega '+num+' · Meta 3 · Jacarezinho';
+ $('detail-title').textContent=w.titulo+(w.data?' · '+w.data:'');
+ $('detail-meta').innerHTML='<span class="chip">'+(w.documentos||[]).length+' plano(s) de aula relacionados</span><span class="chip muted">'+(confirmed?'Oficina distinta informada pela coordenação':'Documentação pendente')+'</span>';
+ $('detail-text').innerHTML='<b>Comprovação prevista:</b> '+esc(p.comprovantes)+'.<p>'+esc(w.nota)+'</p>'+(w.documentos?.length?'<div class="jac-doc-actions">'+workshopDocuments(w)+'</div>':'')+'<p>O álbum de junho está disponível uma única vez em “Álbuns reais de capacitação”, abaixo dos cartões. Fotos não foram atribuídas artificialmente a uma das sessões.</p>';
+ $('detail-gallery').innerHTML='';state.detailSeq=[];
+ $('detail-see-all').hidden=true;
+ $('detail-overlay').hidden=false;document.body.style.overflow='hidden';return;
+ }
+ $('detail-see-all').hidden=false;
  const individual=itemMedia(num),course=metaNum(p.meta)===3&&/curso|capacitação|oficina/i.test(p.titulo),sources=course&&!individual.length?realCollections(p.territorio):[];
  const doc=Number(state.docs[num]||0);state.detailMeta={num,selected:individual,courseFallback:!individual.length&&sources.length>0,category:individual[0]?.categoria||(course?'Capacitação / atividade':''),territory:p.territorio};
  $('detail-overline').textContent='Entrega '+num+' · '+p.meta+' · '+p.territorio;
@@ -154,7 +186,7 @@ function openAction(num){const p=plan.entregas.find(x=>x.numero===num);if(!p)ret
  $('detail-text').innerHTML='<b>Comprovação prevista:</b> '+esc(p.comprovantes)+'. <b>Janela do plano:</b> meses '+p.mesInicio+'–'+p.mesFim+'.'+(sources.length?'<p>Álbuns da capacitação encontrados neste território. Escolha a atividade por data, sem duplicar as fotos entre turmas:</p>'+collectionLinks(p.territorio)+courseSourceLinks(p.territorio):'');
  setDetail(individual);$('detail-overlay').hidden=false;document.body.style.overflow='hidden';
 }
-function closeDetail(){$('detail-overlay').hidden=true;document.body.style.overflow='';state.detailSeq=[]}
+function closeDetail(){$('detail-see-all').hidden=false;$('detail-overlay').hidden=true;document.body.style.overflow='';state.detailSeq=[]}
 $('detail-close').addEventListener('click',closeDetail);$('detail-close-bottom').addEventListener('click',closeDetail);$('detail-overlay').addEventListener('click',e=>{if(e.target===$('detail-overlay'))closeDetail()});$('detail-see-all').addEventListener('click',()=>{const d=state.detailMeta;if(!d)return;closeDetail();$('g-search').value='';$('g-territory').value=d.territory==='Geral'?'':d.territory;$('g-meta').value='';$('g-category').value=d.category;$('g-month').value='';$('g-type').value='';state.albumKey='';state.page=1;state.deliveryFilter=d.courseFallback?0:d.num;if(d.courseFallback){showCourseTerritory(d.territory);return;}renderGallery();switchView('galeria')});
 function getAlbums(){const dict=new Map();for(const m of state.media){const key=m.entrega?'e:'+m.entrega+'|'+m.album:'p:'+m.territorio+'|'+m.meta+'|'+m.album;let d=dict.get(key);if(!d){d={key,title:m.album,territory:m.territorio,category:m.categoria,items:[],provisional:!m.entrega};dict.set(key,d)}d.items.push(m)}return [...dict.values()].sort((a,b)=>b.items.length-a.items.length)}
 function renderAlbums(){const albums=getAlbums();$('album-grid').innerHTML=albums.slice(0,60).map(a=>{const pic=a.items.find(m=>m.tipo==='FOTO');return `<button class="album-card" data-album="${esc(a.key)}"><div class="album-pic">${pic?imgEl(pic,`Foto do álbum ${a.title}`):'<div class="failpic">Álbum de vídeos</div>'}<span class="album-count">${a.items.length} registros</span></div><div class="album-info"><strong>${esc(a.title)}</strong><small>${esc(a.territory)} · ${a.provisional?'Atribuição provisória':'Entrega identificada'}</small></div></button>`}).join('')}
