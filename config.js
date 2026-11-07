@@ -5,7 +5,7 @@
  */
 window.LRJ_SITE_CONFIG = Object.freeze({
   API_URL: '',
-  PAINEL_INTERNO_URL: '',
+  PAINEL_INTERNO_URL: 'https://script.google.com/macros/s/AKfycbxrz1JBplkZ9BXHvB4SBaMB5aeVCEpVSEFAekoznB9XxYVe8LkifV5bYtJrrsYyRURuxg/exec',
   RELOAD_MINUTES: 5,
   PROJECT_LABEL: 'Laboratório de Transformação Social e Urbana'
 });
