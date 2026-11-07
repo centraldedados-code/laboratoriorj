@@ -403,6 +403,21 @@ button:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible{ou
 @media(max-width:360px){.bar-inner{padding:9px 10px}.brand-sub{display:none}.brand-name{font-size:12px}.icon-btn{width:37px;height:39px}.mobile-tab span{font-size:9px}.mobile-tab svg{height:19px;width:19px}.kpi b{font-size:25px}.hero h1{font-size:25px}.container{padding-inline:10px}.album-grid,.gallery-grid{gap:7px}.media-card .media-body{padding:9px 7px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
 
+
+/* Leitor de relatórios: somente referências a arquivos já compartilhados para leitura no Drive */
+.report-gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:12px;margin:10px 0 18px}
+.report-gallery:empty{display:none}
+.report-tile{border:1px solid var(--bd,#d7e1eb);border-radius:14px;padding:12px;display:flex;gap:12px;align-items:center;background:#fff;min-width:0}
+.report-file-icon{width:54px;height:70px;flex:0 0 54px;position:relative;border-radius:9px;background:#f1f5fb;display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:900;color:#10345c;border:1px solid #e2e9f1;overflow:hidden}
+.report-file-icon img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;background:#fff}
+.report-file-icon span{position:relative;z-index:1;background:#092040;color:#fff;padding:2px 4px;border-radius:4px;margin-top:44px}
+.report-tile-main{flex:1;min-width:0}
+.report-tile-title{display:block;overflow-wrap:anywhere;line-height:1.35;font-size:.85rem;margin-bottom:9px;color:#092040}
+.report-open{min-height:40px;border:0;background:#092040;color:#fff;font:700 .8rem Montserrat,Arial,sans-serif;padding:9px 12px;border-radius:9px;cursor:pointer}
+.report-open:focus-visible{outline:3px solid #00B7D7;outline-offset:2px}
+.doc-available{color:#0b777c;font-weight:700}
+@media(max-width:540px){.report-gallery{grid-template-columns:1fr}.report-tile{padding:11px}}
+
 </style>
 </head>
 <body>
@@ -482,7 +497,7 @@ button:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible{ou
     <p class="search-hint">Pesquise entregas, territórios ou abra a galeria completa.</p>
   </section>
 </div>
-<div id="detail-overlay" class="overlay" hidden><div class="detail" role="dialog" aria-modal="true" aria-labelledby="detail-title"><div class="detail-head"><div><small id="detail-overline">Ação e comprovação</small><h3 id="detail-title"></h3></div><button type="button" class="close" id="detail-close" title="Fechar" aria-label="Fechar ficha">×</button></div><div id="detail-meta" class="detail-meta"></div><div id="detail-text" class="detail-note"></div><div id="detail-gallery" class="gallery-grid"></div><button type="button" id="detail-more" class="btn btn-outline load-more" hidden>Mostrar mais fotos</button><div class="card-actions" style="margin-top:18px"><button class="btn btn-dark" id="detail-see-all">Abrir na galeria completa</button><button class="btn btn-outline" id="detail-close-bottom">Fechar ficha</button></div></div></div>
+<div id="detail-overlay" class="overlay" hidden><div class="detail" role="dialog" aria-modal="true" aria-labelledby="detail-title"><div class="detail-head"><div><small id="detail-overline">Ação e comprovação</small><h3 id="detail-title"></h3></div><button type="button" class="close" id="detail-close" title="Fechar" aria-label="Fechar ficha">×</button></div><div id="detail-meta" class="detail-meta"></div><div id="detail-text" class="detail-note"></div><div id="detail-documents" class="report-gallery" aria-live="polite"></div><div id="detail-gallery" class="gallery-grid"></div><button type="button" id="detail-more" class="btn btn-outline load-more" hidden>Mostrar mais fotos</button><div class="card-actions" style="margin-top:18px"><button class="btn btn-dark" id="detail-see-all">Abrir na galeria completa</button><button class="btn btn-outline" id="detail-close-bottom">Fechar ficha</button></div></div></div>
 <div id="lightbox-overlay" class="overlay" hidden><div class="lightbox" role="dialog" aria-modal="true" aria-label="Ampliar foto ou vídeo"><div class="lb-head"><strong id="lb-title">Registro fotográfico</strong><button type="button" class="close" id="lb-close" title="Fechar" aria-label="Fechar foto ou vídeo">×</button></div><div id="lb-display" class="lb-display"></div><div class="lb-foot"><button id="lb-prev">← Anterior</button><span id="lb-indicator">1 de 1</span><button id="lb-next">Próxima →</button></div></div></div>
 <div id="pdf-overlay" class="overlay" hidden><div class="detail" role="dialog" aria-modal="true" aria-label="Visualizar documento" style="width:min(1000px,100%);height:min(92vh,920px);display:flex;flex-direction:column"><div class="detail-head"><div><small>Documento do projeto</small><h3 id="pdf-title">Plano de aula</h3></div><button type="button" class="close" id="pdf-close" title="Fechar" aria-label="Fechar documento">×</button></div><iframe id="pdf-frame" title="Prévia do documento" style="border:0;width:100%;flex:1;background:#fff;border-radius:8px" referrerpolicy="no-referrer"></iframe><p class="doc-note">A prévia é exibida dentro do portal e depende da permissão do arquivo original.</p></div></div>
 <script src="./config.js"></script><script src="./plano.js"></script>
@@ -492,6 +507,8 @@ const $=id=>document.getElementById(id), esc=v=>String(v??'').replace(/[&<>"']/g
 const root='https://drive.google.com/file/d/', thumb=(id,s='w540')=>'https://drive.google.com/thumbnail?id='+encodeURIComponent(id)+'&sz='+s;
 const mediaURL=m=>root+encodeURIComponent(m.id)+'/view';
 const plan=window.LRJ_PLANO||{entregas:[],territorios:['Jacarezinho','Rocinha','Rio das Pedras']};
+const availableDocumentsByFolder={"1Nj9n8Ifdc6FYxPxmvp27FoO2KNM8qp-N":[{"id":"1U70SSf1CPbDDFRrn4354Q11rfoklf4hw","titulo":"Relatório de gestão · Maio · Documento 1","formato":"PDF"},{"id":"11XcaYMrm4u_GtvjCTzQm4CwCsXTVOO3O","titulo":"Relatório de gestão · Maio · Documento 2","formato":"PDF"}],"1i_hdBmS68zoR-Q5Yb-iovyBHjLOnELWv":[{"id":"1AhAKgvydZ79bvL4CJXBU9q0gtfErs1qg","titulo":"Relatório de gestão · Junho · Documento 1","formato":"PDF"},{"id":"1XWCZpD2j2_I3rBgpL0huTJFqBQgTdDwG","titulo":"Relatório de gestão · Junho · Documento 2","formato":"PDF"}],"1x2eQJq-DJRZqjhWJX5tPvrfnbWLtZmrP":[{"id":"1aEbvUWO1EQCZXTEXifmGxB-fXJx7ETDe","titulo":"Relatório de gestão · Maio · Documento 1","formato":"PDF"},{"id":"133HQJM7-AoyJvChogbd1ksfi-uVYGI5Z","titulo":"Relatório de gestão · Maio · Documento 2","formato":"PDF"},{"id":"1YqAXRGmIzMStic7kPcvZK_MUQXqXKySc","titulo":"Relatório de gestão · Maio · Documento 3","formato":"PDF"}],"1XdvLb3rVUl07Sfb-J1dqP0IiVFKkIenD":[{"id":"1P0-XlcX-QJsAC_xxJimNqiFpHe3Rgbvs","titulo":"Relatório de gestão · Junho · Documento 1","formato":"PDF"},{"id":"1ElmTZvTMcLdiMSeW0ZjTnJoki3rROsOf","titulo":"Relatório de gestão · Junho · Documento 2","formato":"PDF"},{"id":"1tnSzTBevxBh7yVswMVhP7DbfoUCiZ-7W","titulo":"Relatório de gestão · Junho · Documento 3","formato":"PDF"}],"1t1Sm4LhMLThlzwfMwRgASBZxkjW_gihf":[{"id":"1-wJVmQoQUqigMTwfu_52MOn0W9o_Hu5U","titulo":"Relatório de gestão · Julho · Documento 1","formato":"PDF"},{"id":"1Aqxu5UE6FFMnEAcSdShivsf6zt1qw6Dj","titulo":"Relatório de gestão · Julho · Documento 2","formato":"PDF"}],"1neKfnz34jejT6LsxDil46N38-o35aPoL":[{"id":"17Kld4USMd6Ulk3AU8uP16vnwQcXMMEjA","titulo":"Relatório de gestão · Maio","formato":"PDF"}],"1YCuPRdbugItPVsa0lhkXkJcrIiuyf9XF":[{"id":"1QJsJvIb4lLXwHLCRkO4ignJJLg6qXqiZ","titulo":"Relatório de gestão · Junho · PDF assinado","formato":"PDF"},{"id":"1gRt-O_z5ZA3gFY8m9_4ZrTBI4DNs2Vkp","titulo":"Relatório de gestão · Junho · Arquivo editável","formato":"DOCX"}],"1WLbtNlKc_uR4ffxjFPUnUGDfPQimRlE9":[{"id":"1tgUSHuj725C9rCM8nZHNnBoq79Xg1Vak","titulo":"Relatório de gestão · Julho · Arquivo editável","formato":"DOCX"}],"1xAXRbSB8-VgTg5uuoqVnXO_lZNezR4V_":[{"id":"1co2_ItJ-yt8PMz5tDXxnUo8KY3S0nIS5","titulo":"Relatório diagnóstico participativo · Jacarezinho","formato":"PDF"}],"1ySnH8-sI4hOUFsyg_83KpI7k3apu1p33":[{"id":"1wU7p-cZ6Lsbagf8vJ5dHKnF67GO_u0ox","titulo":"Relatório diagnóstico territorial · Rocinha","formato":"PDF"}],"1_0AFvwDdhpwhXlMdU6wYJHZmpJXgRgxP":[{"id":"1s6s605dtRuHV3ASHYTRflDvKOQrhDuzk","titulo":"Relatório diagnóstico territorial · Rio das Pedras","formato":"DOCX"}]};
+const folderDocuments=id=>availableDocumentsByFolder[id]||[];
 const state={docsVisible:12,albumsVisible:9,detailVisible:18,media:[],docs:{},courseCollections:{},courseMapping:{},workshopsJac:{},courseTerritory:"",filtered:[],page:1,albumKey:'',detailSeq:[],detailMeta:null,lbSeq:[],lbIndex:0,month:'',loaded:false,docsCatalog:[],docTotals:{}};
 const KEY='lrj_auth_session_20261107';
 // This hash-based front-end entry screen is only a visual convenience, NOT a security boundary on public GitHub Pages.
@@ -579,6 +596,7 @@ function renderActions(){const search=$('a-search').value.trim().toLocaleLowerCa
 }
 
 function setDetail(list){
+ $('detail-documents').innerHTML='';
  state.detailSeq=list;state.detailVisible=Math.min(18,list.length);
  paintDetailMedia();
 }
@@ -610,7 +628,7 @@ function openAction(num){const p=plan.entregas.find(x=>x.numero===num);if(!p)ret
  setDetail(subset);$('detail-overlay').hidden=false;document.body.style.overflow='hidden';
 }
 
-function closeDetail(){$('detail-see-all').hidden=false;$('detail-overlay').hidden=true;document.body.style.overflow='';state.detailSeq=[]}
+function closeDetail(){$('detail-documents').innerHTML='';$('detail-see-all').hidden=false;$('detail-overlay').hidden=true;document.body.style.overflow='';state.detailSeq=[]}
 $('detail-close').addEventListener('click',closeDetail);$('detail-close-bottom').addEventListener('click',closeDetail);$('detail-overlay').addEventListener('click',e=>{if(e.target===$('detail-overlay'))closeDetail()});$('detail-see-all').addEventListener('click',()=>{const d=state.detailMeta;if(!d)return;closeDetail();$('g-search').value='';$('g-territory').value=d.territory==='Geral'?'':d.territory;$('g-meta').value='';$('g-category').value=d.category;$('g-month').value='';$('g-type').value='';state.albumKey='';state.page=1;state.deliveryFilter=d.courseFallback?0:d.num;if(d.courseFallback){showCourseTerritory(d.territory);return;}renderGallery();switchView('galeria')});
 function getAlbums(){const dict=new Map();for(const m of state.media){const key=m.entrega?'e:'+m.entrega+'|'+m.album:'p:'+m.territorio+'|'+m.meta+'|'+m.album;let d=dict.get(key);if(!d){d={key,title:m.album,territory:m.territorio,category:m.categoria,items:[],provisional:!m.entrega};dict.set(key,d)}d.items.push(m)}return [...dict.values()].sort((a,b)=>b.items.length-a.items.length)}
 function renderAlbums(){const albums=getAlbums();state.albumsVisible=state.albumsVisible||9;$('album-grid').innerHTML=albums.slice(0,state.albumsVisible).map(a=>{const pic=a.items.find(m=>m.tipo==='FOTO');return `<button class="album-card" data-album="${esc(a.key)}"><div class="album-pic">${pic?imgEl(pic,`Foto do álbum ${a.title}`):videoCover(a.items.find(m=>m.tipo==='VIDEO'))}<span class="album-count">${a.items.length} registros</span></div><div class="album-info"><strong>${esc(a.title)}</strong><small>${esc(a.territory)} · ${a.provisional?'Atribuição provisória':'Entrega identificada'}</small></div></button>`}).join('');$('albums-more').hidden=albums.length<=state.albumsVisible;}
@@ -642,20 +660,27 @@ function renderDocuments(){
  const used=new Set();
  $('doc-grid').innerHTML=list.slice(0,state.docsVisible).map(d=>{
  const r=mediaForDocumentFolder(d),shots=r.list.filter(x=>x.tipo==='FOTO'),sample=shots.filter(x=>!used.has(x.id)).slice(0,3);sample.forEach(x=>used.add(x.id));
- const pics=sample.length?sample.map(m=>'<img class="doc-shot" loading="lazy" decoding="async" src="'+thumb(m.id,'w500')+'" alt="Fotografia do acervo '+esc(d.territorio)+'">').join(''):'<div class="doc-nophoto"><span>📑</span>Documentação de '+esc(d.categoria)+'</div>';
- const total=(d.documentosDiretos||0);const listed=r.list.length;
- return '<article class="doc-folder"><div class="doc-pict">'+pics+'</div><div class="doc-info"><span class="doc-kind">'+esc(d.categoria)+'</span><h3>'+esc(d.rotulo)+'</h3><p>'+esc(d.territorio)+(d.competencia?' · '+esc(prettyMonth(d.competencia)):'')+'</p><span class="doc-countline">'+total+' documentos localizados · '+(r.strict?'mídias nesta pasta':'mídias do acervo temático')+': '+listed+'</span><button type="button" data-dossier="'+esc(d.id)+'">Ver galeria e documentos</button></div></article>';
+ const reports=folderDocuments(d.id);
+ const pics=sample.length?sample.map(m=>'<img class="doc-shot" loading="lazy" decoding="async" src="'+thumb(m.id,'w500')+'" alt="Fotografia do acervo '+esc(d.territorio)+'">').join(''):
+  reports.length?reports.slice(0,3).map(doc=>'<img class="doc-shot" loading="lazy" decoding="async" src="https://drive.google.com/thumbnail?id='+encodeURIComponent(doc.id)+'&sz=w250" alt="Capa de '+esc(doc.titulo)+'" onerror="this.style.opacity=0.1">').join(''):
+  '<div class="doc-nophoto"><span>📑</span>Documentação de '+esc(d.categoria)+'</div>';
+ const total=(d.documentosDiretos||0);const listed=r.list.length;const available=folderDocuments(d.id).length;
+ return '<article class="doc-folder"><div class="doc-pict">'+pics+'</div><div class="doc-info"><span class="doc-kind">'+esc(d.categoria)+'</span><h3>'+esc(d.rotulo)+'</h3><p>'+esc(d.territorio)+(d.competencia?' · '+esc(prettyMonth(d.competencia)):'')+'</p><span class="doc-countline">'+total+' documentos localizados · '+(available?'<span class="doc-available">'+available+' para visualizar no app</span> · ':'')+(r.strict?'mídias nesta pasta':'mídias do acervo temático')+': '+listed+'</span><button type="button" data-dossier="'+esc(d.id)+'">Ver galeria e documentos</button></div></article>';
  }).join('')||'<div class="empty">Nenhum acervo corresponde aos filtros escolhidos.</div>';$('docs-more').hidden=list.length<=state.docsVisible;
 }
 $('docs-more').addEventListener('click',()=>{state.docsVisible+=12;renderDocuments()});
 function openDocumentFolder(id){
- const d=(state.docsCatalog||[]).find(x=>x.id===id);if(!d)return;const r=mediaForDocumentFolder(d);
+ const d=(state.docsCatalog||[]).find(x=>x.id===id);if(!d)return;
+ const r=mediaForDocumentFolder(d),docs=folderDocuments(d.id);
  $('detail-overline').textContent=d.categoria+' · '+d.territorio;
  $('detail-title').textContent=d.rotulo+(d.competencia?' · '+prettyMonth(d.competencia):'');
  $('detail-meta').innerHTML=countsText(r.list,d.documentosDiretos||0);
- $('detail-text').textContent=r.list.length?(r.strict?'Fotos e vídeos vinculados diretamente a este conjunto documental.':'Fotografias e vídeos do mesmo tema e território, ainda sem vínculo individual a esta pasta.'):'Documentos indexados nesta pasta. A prévia dos arquivos que não foram liberados para publicação depende da conferência e autorização documental.';
- if(d.documentosDiretos){const p=document.createElement('p');p.textContent=`${d.documentosDiretos} documento(s) localizado(s), registrados no monitoramento interno. Os PDFs ainda não aprovados não são expostos no site público.`;$('detail-text').appendChild(p)}
- setDetail(r.list);$('detail-see-all').hidden=true;
+ $('detail-text').textContent=docs.length?
+  'Selecione um relatório abaixo para visualizar o arquivo dentro do aplicativo. A prévia usa as permissões já existentes do Google Drive; documento localizado não significa execução homologada.':
+  (r.list.length?'Fotografias e vídeos relacionados disponíveis abaixo. Os documentos deste conjunto ainda não possuem prévia aprovada para o portal.':'Documentos encontrados no monitoramento. Os arquivos deste conjunto ainda não possuem prévia aprovada para o portal.');
+ setDetail(r.list);
+ $('detail-documents').innerHTML=docs.map(doc=>'<article class="report-tile"><div class="report-file-icon" aria-hidden="true"><img loading="lazy" decoding="async" src="https://drive.google.com/thumbnail?id='+encodeURIComponent(doc.id)+'&sz=w160" onerror="this.remove()" alt=""><span>'+esc(doc.formato)+'</span></div><div class="report-tile-main"><strong class="report-tile-title">'+esc(doc.titulo)+'</strong><button type="button" class="report-open" data-public-doc="'+esc(doc.id)+'" data-doc-title="'+esc(doc.titulo)+'">Visualizar documento</button></div></article>').join('');
+ $('detail-see-all').hidden=true;
  $('detail-overlay').hidden=false;document.body.style.overflow='hidden';
 }
 
@@ -665,7 +690,7 @@ function renderLightbox(){const m=state.lbSeq[state.lbIndex];if(!m)return;$('lb-
 function closeLightbox(){$('lightbox-overlay').hidden=true;$('lb-display').innerHTML='';document.body.style.overflow=$('detail-overlay').hidden?'':'hidden'}
 $('lb-close').addEventListener('click',closeLightbox);$('lightbox-overlay').addEventListener('click',e=>{if(e.target===$('lightbox-overlay'))closeLightbox()});$('lb-prev').addEventListener('click',()=>{if(state.lbIndex>0){state.lbIndex--;renderLightbox()}});$('lb-next').addEventListener('click',()=>{if(state.lbIndex<state.lbSeq.length-1){state.lbIndex++;renderLightbox()}});document.addEventListener('keydown',e=>{if(e.key==='Escape'){if(!$('lightbox-overlay').hidden)closeLightbox();else if(!$('detail-overlay').hidden)closeDetail()}if(!$('lightbox-overlay').hidden&&e.key==='ArrowRight')$('lb-next').click();if(!$('lightbox-overlay').hidden&&e.key==='ArrowLeft')$('lb-prev').click()});
 
-const approvedDocumentIds=new Set(['1P5W8eXOti7LpYL5yUNL4LP8ZT_GgXZNu','13A9cjBicytweHzJyBOv5qbFLxMk0NwaY','11bBBR5m0dUc9IPRom2aBArgxrXbu-m_l']);
+const approvedDocumentIds=new Set([...['1P5W8eXOti7LpYL5yUNL4LP8ZT_GgXZNu','13A9cjBicytweHzJyBOv5qbFLxMk0NwaY','11bBBR5m0dUc9IPRom2aBArgxrXbu-m_l'],...Object.values(availableDocumentsByFolder).flatMap(v=>v.map(d=>d.id))]);
 function openApprovedDoc(id,title){if(!approvedDocumentIds.has(id))return;
  $('pdf-title').textContent=title;
  $('pdf-frame').src='https://drive.google.com/file/d/'+encodeURIComponent(id)+'/preview';
