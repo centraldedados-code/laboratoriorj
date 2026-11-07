@@ -1,0 +1,7 @@
+const CACHE_NAME='lrj-shell-premium-v1';const SHELL=['./','./index.html','./config.js','./plano.js','./manifest.webmanifest','./assets/logo-cabecalho.png','./assets/app-icon-192.png'];
+self.addEventListener('install',event=>{event.waitUntil(caches.open(CACHE_NAME).then(cache=>cache.addAll(SHELL).catch(()=>{})));self.skipWaiting()});
+self.addEventListener('activate',event=>{event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE_NAME).map(k=>caches.delete(k)))));self.clients.claim()});
+self.addEventListener('fetch',event=>{const req=event.request;if(req.method!=='GET'||new URL(req.url).origin!==self.location.origin)return;const u=new URL(req.url);
+if(/(?:evidencias|documentos)\.json$/.test(u.pathname)||req.mode==='navigate'){event.respondWith(fetch(req).then(resp=>{if(resp.ok&&req.mode==='navigate')caches.open(CACHE_NAME).then(c=>c.put(req,resp.clone()));return resp}).catch(async()=>{if(req.mode==='navigate')return await caches.match('./index.html')||Response.error();return new Response('Dados disponíveis somente online',{status:503})}));return;}
+if(SHELL.some(f=>f!=='./'&&u.pathname.endsWith('/'+f.slice(2)))){event.respondWith(fetch(req).then(resp=>{if(resp.ok)caches.open(CACHE_NAME).then(c=>c.put(req,resp.clone()));return resp}).catch(()=>caches.match(req)));}
+});
