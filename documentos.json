@@ -1,0 +1,1295 @@
+{
+ "schemaVersion": 1,
+ "geradoEm": "2026-11-07",
+ "projeto": "Laboratório RJ",
+ "politica": "Índice de PASTAS temáticas. Acesso ao conteúdo controlado pelo Google Drive. Não expõe nomes de PDFs pessoais, contratos, notas fiscais, listas de presença ou hashes.",
+ "totalRegistroHistorico": 1153,
+ "totalMidiasNaGaleria": 887,
+ "documentosInventariados": 114,
+ "outrosDocumentos": 6,
+ "pastasPublicas": [
+  {
+   "id": "1IC93GWsHFKCxckCIE2PgPO3UUiJ3Ai3Z",
+   "territorio": "Jacarezinho",
+   "categoria": "Cursos e oficinas",
+   "competencia": "2026-06",
+   "rotulo": "M03 Cursos Capacitacao",
+   "arquivosDiretos": 0,
+   "fotosDiretas": 0,
+   "videosDiretos": 0,
+   "documentosDiretos": 0,
+   "link": "https://drive.google.com/drive/folders/1IC93GWsHFKCxckCIE2PgPO3UUiJ3Ai3Z",
+   "origens": [
+    {
+     "id": "1IC93GWsHFKCxckCIE2PgPO3UUiJ3Ai3Z",
+     "link": "https://drive.google.com/drive/folders/1IC93GWsHFKCxckCIE2PgPO3UUiJ3Ai3Z",
+     "arquivos": 0
+    }
+   ]
+  },
+  {
+   "id": "1l1-ML_DcjbQw1MwaJl3kXBfXvVZOBg1c",
+   "territorio": "Jacarezinho",
+   "categoria": "Cursos e oficinas",
+   "competencia": "2026-06",
+   "rotulo": "M03 Fotos Cursos 2026-06",
+   "arquivosDiretos": 107,
+   "fotosDiretas": 101,
+   "videosDiretos": 6,
+   "documentosDiretos": 0,
+   "link": "https://drive.google.com/drive/folders/1l1-ML_DcjbQw1MwaJl3kXBfXvVZOBg1c",
+   "origens": [
+    {
+     "id": "1l1-ML_DcjbQw1MwaJl3kXBfXvVZOBg1c",
+     "link": "https://drive.google.com/drive/folders/1l1-ML_DcjbQw1MwaJl3kXBfXvVZOBg1c",
+     "arquivos": 107
+    }
+   ]
+  },
+  {
+   "id": "1xAXRbSB8-VgTg5uuoqVnXO_lZNezR4V_",
+   "territorio": "Jacarezinho",
+   "categoria": "Diagnósticos territoriais",
+   "competencia": "",
+   "rotulo": "02 Diagnosticos Territoriais",
+   "arquivosDiretos": 1,
+   "fotosDiretas": 0,
+   "videosDiretos": 0,
+   "documentosDiretos": 1,
+   "link": "https://drive.google.com/drive/folders/1xAXRbSB8-VgTg5uuoqVnXO_lZNezR4V_",
+   "origens": [
+    {
+     "id": "1xAXRbSB8-VgTg5uuoqVnXO_lZNezR4V_",
+     "link": "https://drive.google.com/drive/folders/1xAXRbSB8-VgTg5uuoqVnXO_lZNezR4V_",
+     "arquivos": 1
+    }
+   ]
+  },
+  {
+   "id": "1OBJRGxvK7abuUKJvQpZbikWWTKFg0xZA",
+   "territorio": "Jacarezinho",
+   "categoria": "Intervenções urbanas",
+   "competencia": "2026-09",
+   "rotulo": "M04 Intervencao Urbana",
+   "arquivosDiretos": 45,
+   "fotosDiretas": 37,
+   "videosDiretos": 8,
+   "documentosDiretos": 0,
+   "link": "https://drive.google.com/drive/folders/1OBJRGxvK7abuUKJvQpZbikWWTKFg0xZA",
+   "origens": [
+    {
+     "id": "1OBJRGxvK7abuUKJvQpZbikWWTKFg0xZA",
+     "link": "https://drive.google.com/drive/folders/1OBJRGxvK7abuUKJvQpZbikWWTKFg0xZA",
+     "arquivos": 45
+    }
+   ]
+  },
+  {
+   "id": "1L0WRJ8HdqU3n80cN1S-9eRWm5lfn4b9w",
+   "territorio": "Jacarezinho",
+   "categoria": "Pesquisas e diagnósticos",
+   "competencia": "2026-05",
+   "rotulo": "M02 Pesquisa De Campo",
+   "arquivosDiretos": 26,
+   "fotosDiretas": 25,
+   "videosDiretos": 1,
+   "documentosDiretos": 0,
+   "link": "https://drive.google.com/drive/folders/1L0WRJ8HdqU3n80cN1S-9eRWm5lfn4b9w",
+   "origens": [
+    {
+     "id": "1L0WRJ8HdqU3n80cN1S-9eRWm5lfn4b9w",
+     "link": "https://drive.google.com/drive/folders/1L0WRJ8HdqU3n80cN1S-9eRWm5lfn4b9w",
+     "arquivos": 26
+    }
+   ]
+  },
+  {
+   "id": "1_AsHIBMgxInO-IQxgfxvZZs0s_ku3go2",
+   "territorio": "Jacarezinho",
+   "categoria": "Planos de aula",
+   "competencia": "2026-06",
+   "rotulo": "M03 Planos De Aula",
+   "arquivosDiretos": 3,
+   "fotosDiretas": 0,
+   "videosDiretos": 0,
+   "documentosDiretos": 3,
+   "link": "https://drive.google.com/drive/folders/1_AsHIBMgxInO-IQxgfxvZZs0s_ku3go2",
+   "origens": [
+    {
+     "id": "1_AsHIBMgxInO-IQxgfxvZZs0s_ku3go2",
+     "link": "https://drive.google.com/drive/folders/1_AsHIBMgxInO-IQxgfxvZZs0s_ku3go2",
+     "arquivos": 3
+    }
+   ]
+  },
+  {
+   "id": "1Nj9n8Ifdc6FYxPxmvp27FoO2KNM8qp-N",
+   "territorio": "Jacarezinho",
+   "categoria": "Relatórios de gestão",
+   "competencia": "2026-05",
+   "rotulo": "M01 Relatorios De Gestao",
+   "arquivosDiretos": 2,
+   "fotosDiretas": 0,
+   "videosDiretos": 0,
+   "documentosDiretos": 2,
+   "link": "https://drive.google.com/drive/folders/1Nj9n8Ifdc6FYxPxmvp27FoO2KNM8qp-N",
+   "origens": [
+    {
+     "id": "1Nj9n8Ifdc6FYxPxmvp27FoO2KNM8qp-N",
+     "link": "https://drive.google.com/drive/folders/1Nj9n8Ifdc6FYxPxmvp27FoO2KNM8qp-N",
+     "arquivos": 2
+    }
+   ]
+  },
+  {
+   "id": "1i_hdBmS68zoR-Q5Yb-iovyBHjLOnELWv",
+   "territorio": "Jacarezinho",
+   "categoria": "Relatórios de gestão",
+   "competencia": "2026-06",
+   "rotulo": "M01 Relatorios De Gestao",
+   "arquivosDiretos": 2,
+   "fotosDiretas": 0,
+   "videosDiretos": 0,
+   "documentosDiretos": 2,
+   "link": "https://drive.google.com/drive/folders/1i_hdBmS68zoR-Q5Yb-iovyBHjLOnELWv",
+   "origens": [
+    {
+     "id": "1i_hdBmS68zoR-Q5Yb-iovyBHjLOnELWv",
+     "link": "https://drive.google.com/drive/folders/1i_hdBmS68zoR-Q5Yb-iovyBHjLOnELWv",
+     "arquivos": 2
+    }
+   ]
+  },
+  {
+   "id": "116d3QO7HDdwuvCJ59oOl49X8grD2SEBF",
+   "territorio": "Jacarezinho",
+   "categoria": "Relatórios de gestão",
+   "competencia": "2026-07",
+   "rotulo": "M01 Relatorios De Gestao",
+   "arquivosDiretos": 0,
+   "fotosDiretas": 0,
+   "videosDiretos": 0,
+   "documentosDiretos": 0,
+   "link": "https://drive.google.com/drive/folders/116d3QO7HDdwuvCJ59oOl49X8grD2SEBF",
+   "origens": [
+    {
+     "id": "116d3QO7HDdwuvCJ59oOl49X8grD2SEBF",
+     "link": "https://drive.google.com/drive/folders/116d3QO7HDdwuvCJ59oOl49X8grD2SEBF",
+     "arquivos": 0
+    }
+   ]
+  },
+  {
+   "id": "1l4bn22P-F21JocqIMJbD8PjsKi9v-l74",
+   "territorio": "Jacarezinho",
+   "categoria": "Seminários territoriais",
+   "competencia": "2026-08",
+   "rotulo": "M03 Seminario",
+   "arquivosDiretos": 0,
+   "fotosDiretas": 0,
+   "videosDiretos": 0,
+   "documentosDiretos": 0,
+   "link": "https://drive.google.com/drive/folders/1l4bn22P-F21JocqIMJbD8PjsKi9v-l74",
+   "origens": [
+    {
+     "id": "1l4bn22P-F21JocqIMJbD8PjsKi9v-l74",
+     "link": "https://drive.google.com/drive/folders/1l4bn22P-F21JocqIMJbD8PjsKi9v-l74",
+     "arquivos": 0
+    }
+   ]
+  },
+  {
+   "id": "1oHp2cGLn-IL9thY5_elyA6pQgQBlM2Ul",
+   "territorio": "Jacarezinho",
+   "categoria": "Seminários territoriais",
+   "competencia": "2026-09",
+   "rotulo": "01 Fotos E Videos",
+   "arquivosDiretos": 47,
+   "fotosDiretas": 47,
+   "videosDiretos": 0,
+   "documentosDiretos": 0,
+   "link": "https://drive.google.com/drive/folders/1oHp2cGLn-IL9thY5_elyA6pQgQBlM2Ul",
+   "origens": [
+    {
+     "id": "1oHp2cGLn-IL9thY5_elyA6pQgQBlM2Ul",
+     "link": "https://drive.google.com/drive/folders/1oHp2cGLn-IL9thY5_elyA6pQgQBlM2Ul",
+     "arquivos": 47
+    }
+   ]
+  },
+  {
+   "id": "13kpfhlRMXewBR48gVHO_NcvTQ0q_ixOY",
+   "territorio": "Jacarezinho",
+   "categoria": "Seminários territoriais",
+   "competencia": "2026-09",
+   "rotulo": "M03 Seminario 2026-09-03",
+   "arquivosDiretos": 0,
+   "fotosDiretas": 0,
+   "videosDiretos": 0,
+   "documentosDiretos": 0,
+   "link": "https://drive.google.com/drive/folders/13kpfhlRMXewBR48gVHO_NcvTQ0q_ixOY",
+   "origens": [
+    {
+     "id": "13kpfhlRMXewBR48gVHO_NcvTQ0q_ixOY",
+     "link": "https://drive.google.com/drive/folders/13kpfhlRMXewBR48gVHO_NcvTQ0q_ixOY",
+     "arquivos": 0
+    }
+   ]
+  },
+  {
+   "id": "1LJzLeUVvlSAFgxxh6bZLavkEMcdD-XxK",
+   "territorio": "Rio das Pedras",
+   "categoria": "Cursos e oficinas",
+   "competencia": "2026-07",
+   "rotulo": "Fotos",
+   "arquivosDiretos": 140,
+   "fotosDiretas": 101,
+   "videosDiretos": 39,
+   "documentosDiretos": 0,
+   "link": "https://drive.google.com/drive/folders/1LJzLeUVvlSAFgxxh6bZLavkEMcdD-XxK",
+   "origens": [
+    {
+     "id": "1LJzLeUVvlSAFgxxh6bZLavkEMcdD-XxK",
+     "link": "https://drive.google.com/drive/folders/1LJzLeUVvlSAFgxxh6bZLavkEMcdD-XxK",
+     "arquivos": 89
+    },
+    {
+     "id": "1cXeCmPsAgtsqaNSfzt-FheGB00GIGd3_",
+     "link": "https://drive.google.com/drive/folders/1cXeCmPsAgtsqaNSfzt-FheGB00GIGd3_",
+     "arquivos": 51
+    }
+   ]
+  },
+  {
+   "id": "1OHYd8lKAaM3NPW71VXGrUWtCCM7YLVp3",
+   "territorio": "Rio das Pedras",
+   "categoria": "Cursos e oficinas",
+   "competencia": "2026-07",
+   "rotulo": "M03 Oficinas De Capacitacao",
+   "arquivosDiretos": 0,
+   "fotosDiretas": 0,
+   "videosDiretos": 0,
+   "documentosDiretos": 0,
+   "link": "https://drive.google.com/drive/folders/1OHYd8lKAaM3NPW71VXGrUWtCCM7YLVp3",
+   "origens": [
+    {
+     "id": "1OHYd8lKAaM3NPW71VXGrUWtCCM7YLVp3",
+     "link": "https://drive.google.com/drive/folders/1OHYd8lKAaM3NPW71VXGrUWtCCM7YLVp3",
+     "arquivos": 0
+    },
+    {
+     "id": "1A7-rY0zUI6N1-GesBUyk9NN-ql0TsHEH",
+     "link": "https://drive.google.com/drive/folders/1A7-rY0zUI6N1-GesBUyk9NN-ql0TsHEH",
+     "arquivos": 0
+    }
+   ]
+  },
+  {
+   "id": "14zSOzGQjo1jgePdXsV_0iDaW8UPijoDn",
+   "territorio": "Rio das Pedras",
+   "categoria": "Cursos e oficinas",
+   "competencia": "2026-07",
+   "rotulo": "Oficina 2026-07-18",
+   "arquivosDiretos": 0,
+   "fotosDiretas": 0,
+   "videosDiretos": 0,
+   "documentosDiretos": 0,
+   "link": "https://drive.google.com/drive/folders/14zSOzGQjo1jgePdXsV_0iDaW8UPijoDn",
+   "origens": [
+    {
+     "id": "14zSOzGQjo1jgePdXsV_0iDaW8UPijoDn",
+     "link": "https://drive.google.com/drive/folders/14zSOzGQjo1jgePdXsV_0iDaW8UPijoDn",
+     "arquivos": 0
+    }
+   ]
+  },
+  {
+   "id": "1oSqdg3Gei3ahGpgvY_i8onxYXGUALUph",
+   "territorio": "Rio das Pedras",
+   "categoria": "Cursos e oficinas",
+   "competencia": "2026-07",
+   "rotulo": "Oficina 2026-07-25",
+   "arquivosDiretos": 0,
+   "fotosDiretas": 0,
+   "videosDiretos": 0,
+   "documentosDiretos": 0,
+   "link": "https://drive.google.com/drive/folders/1oSqdg3Gei3ahGpgvY_i8onxYXGUALUph",
+   "origens": [
+    {
+     "id": "1oSqdg3Gei3ahGpgvY_i8onxYXGUALUph",
+     "link": "https://drive.google.com/drive/folders/1oSqdg3Gei3ahGpgvY_i8onxYXGUALUph",
+     "arquivos": 0
+    }
+   ]
+  },
+  {
+   "id": "1MA2KqkDAhXZUmzfbbzSIdy2Yv1Hlc6NF",
+   "territorio": "Rio das Pedras",
+   "categoria": "Cursos e oficinas",
+   "competencia": "2026-07",
+   "rotulo": "Planos De Aula",
+   "arquivosDiretos": 1,
+   "fotosDiretas": 0,
+   "videosDiretos": 0,
+   "documentosDiretos": 1,
+   "link": "https://drive.google.com/drive/folders/1MA2KqkDAhXZUmzfbbzSIdy2Yv1Hlc6NF",
+   "origens": [
+    {
+     "id": "1MA2KqkDAhXZUmzfbbzSIdy2Yv1Hlc6NF",
+     "link": "https://drive.google.com/drive/folders/1MA2KqkDAhXZUmzfbbzSIdy2Yv1Hlc6NF",
+     "arquivos": 1
+    }
+   ]
+  },
+  {
+   "id": "1_0AFvwDdhpwhXlMdU6wYJHZmpJXgRgxP",
+   "territorio": "Rio das Pedras",
+   "categoria": "Diagnósticos territoriais",
+   "competencia": "",
+   "rotulo": "02 Diagnosticos Territoriais",
+   "arquivosDiretos": 1,
+   "fotosDiretas": 0,
+   "videosDiretos": 0,
+   "documentosDiretos": 1,
+   "link": "https://drive.google.com/drive/folders/1_0AFvwDdhpwhXlMdU6wYJHZmpJXgRgxP",
+   "origens": [
+    {
+     "id": "1_0AFvwDdhpwhXlMdU6wYJHZmpJXgRgxP",
+     "link": "https://drive.google.com/drive/folders/1_0AFvwDdhpwhXlMdU6wYJHZmpJXgRgxP",
+     "arquivos": 1
+    }
+   ]
+  },
+  {
+   "id": "19gi--8zMO1sjD-opv6qIrli_Jr_bgWbH",
+   "territorio": "Rio das Pedras",
+   "categoria": "Intervenções urbanas",
+   "competencia": "2026-09",
+   "rotulo": "01 Fotos E Videos",
+   "arquivosDiretos": 0,
+   "fotosDiretas": 0,
+   "videosDiretos": 0,
+   "documentosDiretos": 0,
+   "link": "https://drive.google.com/drive/folders/19gi--8zMO1sjD-opv6qIrli_Jr_bgWbH",
+   "origens": [
+    {
+     "id": "19gi--8zMO1sjD-opv6qIrli_Jr_bgWbH",
+     "link": "https://drive.google.com/drive/folders/19gi--8zMO1sjD-opv6qIrli_Jr_bgWbH",
+     "arquivos": 0
+    }
+   ]
+  },
+  {
+   "id": "1Eel_YdkdHR8u1oXpqIS_Qp47w907_NGs",
+   "territorio": "Rio das Pedras",
+   "categoria": "Intervenções urbanas",
+   "competencia": "2026-09",
+   "rotulo": "M04 Intervencao Urbana",
+   "arquivosDiretos": 5,
+   "fotosDiretas": 0,
+   "videosDiretos": 0,
+   "documentosDiretos": 5,
+   "link": "https://drive.google.com/drive/folders/1Eel_YdkdHR8u1oXpqIS_Qp47w907_NGs",
+   "origens": [
+    {
+     "id": "1Eel_YdkdHR8u1oXpqIS_Qp47w907_NGs",
+     "link": "https://drive.google.com/drive/folders/1Eel_YdkdHR8u1oXpqIS_Qp47w907_NGs",
+     "arquivos": 5
+    },
+    {
+     "id": "1WLIhtlMJg8GbLZKLJEzaNcLgoQHaK0Sa",
+     "link": "https://drive.google.com/drive/folders/1WLIhtlMJg8GbLZKLJEzaNcLgoQHaK0Sa",
+     "arquivos": 0
+    }
+   ]
+  },
+  {
+   "id": "1kixOJ7pbd524DQnURPqLFKKrKG2nigh_",
+   "territorio": "Rio das Pedras",
+   "categoria": "Intervenções urbanas",
+   "competencia": "2026-09",
+   "rotulo": "Praca Cine Rock",
+   "arquivosDiretos": 12,
+   "fotosDiretas": 12,
+   "videosDiretos": 0,
+   "documentosDiretos": 0,
+   "link": "https://drive.google.com/drive/folders/1kixOJ7pbd524DQnURPqLFKKrKG2nigh_",
+   "origens": [
+    {
+     "id": "1kixOJ7pbd524DQnURPqLFKKrKG2nigh_",
+     "link": "https://drive.google.com/drive/folders/1kixOJ7pbd524DQnURPqLFKKrKG2nigh_",
+     "arquivos": 12
+    }
+   ]
+  },
+  {
+   "id": "184UUMLzTX7PrV4iph6IW_-nq6vaHu-3S",
+   "territorio": "Rio das Pedras",
+   "categoria": "Intervenções urbanas",
+   "competencia": "2026-09",
+   "rotulo": "Praca Padre Cicero",
+   "arquivosDiretos": 1,
+   "fotosDiretas": 0,
+   "videosDiretos": 1,
+   "documentosDiretos": 0,
+   "link": "https://drive.google.com/drive/folders/184UUMLzTX7PrV4iph6IW_-nq6vaHu-3S",
+   "origens": [
+    {
+     "id": "184UUMLzTX7PrV4iph6IW_-nq6vaHu-3S",
+     "link": "https://drive.google.com/drive/folders/184UUMLzTX7PrV4iph6IW_-nq6vaHu-3S",
+     "arquivos": 1
+    }
+   ]
+  },
+  {
+   "id": "1QR10hhGN-j1tvqjxFHspxn1hDoofosEK",
+   "territorio": "Rio das Pedras",
+   "categoria": "Intervenções urbanas",
+   "competencia": "2026-10",
+   "rotulo": "01 Fotos E Videos",
+   "arquivosDiretos": 0,
+   "fotosDiretas": 0,
+   "videosDiretos": 0,
+   "documentosDiretos": 0,
+   "link": "https://drive.google.com/drive/folders/1QR10hhGN-j1tvqjxFHspxn1hDoofosEK",
+   "origens": [
+    {
+     "id": "1QR10hhGN-j1tvqjxFHspxn1hDoofosEK",
+     "link": "https://drive.google.com/drive/folders/1QR10hhGN-j1tvqjxFHspxn1hDoofosEK",
+     "arquivos": 0
+    }
+   ]
+  },
+  {
+   "id": "1lyjODQhIPxXzg0QRMiFgp1sC_4agGT4q",
+   "territorio": "Rio das Pedras",
+   "categoria": "Intervenções urbanas",
+   "competencia": "2026-10",
+   "rotulo": "M04 Intervencao Urbana",
+   "arquivosDiretos": 3,
+   "fotosDiretas": 0,
+   "videosDiretos": 0,
+   "documentosDiretos": 3,
+   "link": "https://drive.google.com/drive/folders/1lyjODQhIPxXzg0QRMiFgp1sC_4agGT4q",
+   "origens": [
+    {
+     "id": "1lyjODQhIPxXzg0QRMiFgp1sC_4agGT4q",
+     "link": "https://drive.google.com/drive/folders/1lyjODQhIPxXzg0QRMiFgp1sC_4agGT4q",
+     "arquivos": 3
+    }
+   ]
+  },
+  {
+   "id": "1PpO0Ssa95Xfr0zTTI517VFAE7zICPxMQ",
+   "territorio": "Rio das Pedras",
+   "categoria": "Intervenções urbanas",
+   "competencia": "2026-10",
+   "rotulo": "Praca Cine Rock",
+   "arquivosDiretos": 11,
+   "fotosDiretas": 4,
+   "videosDiretos": 7,
+   "documentosDiretos": 0,
+   "link": "https://drive.google.com/drive/folders/1PpO0Ssa95Xfr0zTTI517VFAE7zICPxMQ",
+   "origens": [
+    {
+     "id": "1_1R-JPWfVB9bDHgxgJMc98tJPH-ofuzi",
+     "link": "https://drive.google.com/drive/folders/1_1R-JPWfVB9bDHgxgJMc98tJPH-ofuzi",
+     "arquivos": 0
+    },
+    {
+     "id": "1PpO0Ssa95Xfr0zTTI517VFAE7zICPxMQ",
+     "link": "https://drive.google.com/drive/folders/1PpO0Ssa95Xfr0zTTI517VFAE7zICPxMQ",
+     "arquivos": 11
+    }
+   ]
+  },
+  {
+   "id": "14K8KeSscjEUCiYc2mc_vPb0e1I_wKbf1",
+   "territorio": "Rio das Pedras",
+   "categoria": "Intervenções urbanas",
+   "competencia": "2026-10",
+   "rotulo": "Praca Padre Cicero",
+   "arquivosDiretos": 14,
+   "fotosDiretas": 10,
+   "videosDiretos": 4,
+   "documentosDiretos": 0,
+   "link": "https://drive.google.com/drive/folders/14K8KeSscjEUCiYc2mc_vPb0e1I_wKbf1",
+   "origens": [
+    {
+     "id": "1zsV2zinRp19RVFuiZswxWI6c0yNCYrec",
+     "link": "https://drive.google.com/drive/folders/1zsV2zinRp19RVFuiZswxWI6c0yNCYrec",
+     "arquivos": 0
+    },
+    {
+     "id": "14K8KeSscjEUCiYc2mc_vPb0e1I_wKbf1",
+     "link": "https://drive.google.com/drive/folders/14K8KeSscjEUCiYc2mc_vPb0e1I_wKbf1",
+     "arquivos": 14
+    }
+   ]
+  },
+  {
+   "id": "1r_cOkrfBh0w2VouUdBFUP7nJ--NMveM6",
+   "territorio": "Rio das Pedras",
+   "categoria": "Intervenções urbanas",
+   "competencia": "2026-11",
+   "rotulo": "01 Fotos E Videos",
+   "arquivosDiretos": 0,
+   "fotosDiretas": 0,
+   "videosDiretos": 0,
+   "documentosDiretos": 0,
+   "link": "https://drive.google.com/drive/folders/1r_cOkrfBh0w2VouUdBFUP7nJ--NMveM6",
+   "origens": [
+    {
+     "id": "1r_cOkrfBh0w2VouUdBFUP7nJ--NMveM6",
+     "link": "https://drive.google.com/drive/folders/1r_cOkrfBh0w2VouUdBFUP7nJ--NMveM6",
+     "arquivos": 0
+    }
+   ]
+  },
+  {
+   "id": "1CUdWhiYccgEIPkzYJ3PhFIfKqgKnfdRl",
+   "territorio": "Rio das Pedras",
+   "categoria": "Intervenções urbanas",
+   "competencia": "2026-11",
+   "rotulo": "M04 Intervencao Urbana",
+   "arquivosDiretos": 0,
+   "fotosDiretas": 0,
+   "videosDiretos": 0,
+   "documentosDiretos": 0,
+   "link": "https://drive.google.com/drive/folders/1CUdWhiYccgEIPkzYJ3PhFIfKqgKnfdRl",
+   "origens": [
+    {
+     "id": "1CUdWhiYccgEIPkzYJ3PhFIfKqgKnfdRl",
+     "link": "https://drive.google.com/drive/folders/1CUdWhiYccgEIPkzYJ3PhFIfKqgKnfdRl",
+     "arquivos": 0
+    }
+   ]
+  },
+  {
+   "id": "1zPEFFaDnQoyjdZsT3cX4FBT0Y7nwDHWs",
+   "territorio": "Rio das Pedras",
+   "categoria": "Intervenções urbanas",
+   "competencia": "2026-11",
+   "rotulo": "Praca Cine Rock",
+   "arquivosDiretos": 9,
+   "fotosDiretas": 8,
+   "videosDiretos": 1,
+   "documentosDiretos": 0,
+   "link": "https://drive.google.com/drive/folders/1zPEFFaDnQoyjdZsT3cX4FBT0Y7nwDHWs",
+   "origens": [
+    {
+     "id": "1zPEFFaDnQoyjdZsT3cX4FBT0Y7nwDHWs",
+     "link": "https://drive.google.com/drive/folders/1zPEFFaDnQoyjdZsT3cX4FBT0Y7nwDHWs",
+     "arquivos": 9
+    }
+   ]
+  },
+  {
+   "id": "1niO8MYbxGQO88dGADBgKxm6RecS2Q-NQ",
+   "territorio": "Rio das Pedras",
+   "categoria": "Intervenções urbanas",
+   "competencia": "2026-11",
+   "rotulo": "Praca Padre Cicero",
+   "arquivosDiretos": 8,
+   "fotosDiretas": 8,
+   "videosDiretos": 0,
+   "documentosDiretos": 0,
+   "link": "https://drive.google.com/drive/folders/1niO8MYbxGQO88dGADBgKxm6RecS2Q-NQ",
+   "origens": [
+    {
+     "id": "1niO8MYbxGQO88dGADBgKxm6RecS2Q-NQ",
+     "link": "https://drive.google.com/drive/folders/1niO8MYbxGQO88dGADBgKxm6RecS2Q-NQ",
+     "arquivos": 8
+    }
+   ]
+  },
+  {
+   "id": "1jakjxcV6pP7k455iQDW-EudhbjD1R-xs",
+   "territorio": "Rio das Pedras",
+   "categoria": "Pesquisas e diagnósticos",
+   "competencia": "2026-05",
+   "rotulo": "M02 Pesquisa De Campo",
+   "arquivosDiretos": 36,
+   "fotosDiretas": 36,
+   "videosDiretos": 0,
+   "documentosDiretos": 0,
+   "link": "https://drive.google.com/drive/folders/1jakjxcV6pP7k455iQDW-EudhbjD1R-xs",
+   "origens": [
+    {
+     "id": "1jakjxcV6pP7k455iQDW-EudhbjD1R-xs",
+     "link": "https://drive.google.com/drive/folders/1jakjxcV6pP7k455iQDW-EudhbjD1R-xs",
+     "arquivos": 36
+    },
+    {
+     "id": "1_hQn8wMP5Bodw20VHcv6-YzhwxyNYT2C",
+     "link": "https://drive.google.com/drive/folders/1_hQn8wMP5Bodw20VHcv6-YzhwxyNYT2C",
+     "arquivos": 0
+    }
+   ]
+  },
+  {
+   "id": "1EF9j0WhdjMSV5aDgV-ZBN92BSGmbR94K",
+   "territorio": "Rio das Pedras",
+   "categoria": "Pesquisas e diagnósticos",
+   "competencia": "2026-05",
+   "rotulo": "M02 Pesquisa E Diagnostico",
+   "arquivosDiretos": 0,
+   "fotosDiretas": 0,
+   "videosDiretos": 0,
+   "documentosDiretos": 0,
+   "link": "https://drive.google.com/drive/folders/1EF9j0WhdjMSV5aDgV-ZBN92BSGmbR94K",
+   "origens": [
+    {
+     "id": "1EF9j0WhdjMSV5aDgV-ZBN92BSGmbR94K",
+     "link": "https://drive.google.com/drive/folders/1EF9j0WhdjMSV5aDgV-ZBN92BSGmbR94K",
+     "arquivos": 0
+    }
+   ]
+  },
+  {
+   "id": "1x2eQJq-DJRZqjhWJX5tPvrfnbWLtZmrP",
+   "territorio": "Rio das Pedras",
+   "categoria": "Relatórios de gestão",
+   "competencia": "2026-05",
+   "rotulo": "M01 Relatorios De Gestao",
+   "arquivosDiretos": 3,
+   "fotosDiretas": 0,
+   "videosDiretos": 0,
+   "documentosDiretos": 3,
+   "link": "https://drive.google.com/drive/folders/1x2eQJq-DJRZqjhWJX5tPvrfnbWLtZmrP",
+   "origens": [
+    {
+     "id": "1x2eQJq-DJRZqjhWJX5tPvrfnbWLtZmrP",
+     "link": "https://drive.google.com/drive/folders/1x2eQJq-DJRZqjhWJX5tPvrfnbWLtZmrP",
+     "arquivos": 3
+    },
+    {
+     "id": "1REaMgpdro-2PxqALiXgXOkAVi3nOIclf",
+     "link": "https://drive.google.com/drive/folders/1REaMgpdro-2PxqALiXgXOkAVi3nOIclf",
+     "arquivos": 0
+    }
+   ]
+  },
+  {
+   "id": "1XdvLb3rVUl07Sfb-J1dqP0IiVFKkIenD",
+   "territorio": "Rio das Pedras",
+   "categoria": "Relatórios de gestão",
+   "competencia": "2026-06",
+   "rotulo": "M01 Relatorios De Gestao",
+   "arquivosDiretos": 3,
+   "fotosDiretas": 0,
+   "videosDiretos": 0,
+   "documentosDiretos": 3,
+   "link": "https://drive.google.com/drive/folders/1XdvLb3rVUl07Sfb-J1dqP0IiVFKkIenD",
+   "origens": [
+    {
+     "id": "1XdvLb3rVUl07Sfb-J1dqP0IiVFKkIenD",
+     "link": "https://drive.google.com/drive/folders/1XdvLb3rVUl07Sfb-J1dqP0IiVFKkIenD",
+     "arquivos": 3
+    },
+    {
+     "id": "1pX7EITgNmbf_Ukiv3mHKLAhxXot2zsnk",
+     "link": "https://drive.google.com/drive/folders/1pX7EITgNmbf_Ukiv3mHKLAhxXot2zsnk",
+     "arquivos": 0
+    }
+   ]
+  },
+  {
+   "id": "1t1Sm4LhMLThlzwfMwRgASBZxkjW_gihf",
+   "territorio": "Rio das Pedras",
+   "categoria": "Relatórios de gestão",
+   "competencia": "2026-07",
+   "rotulo": "M01 Relatorios De Gestao",
+   "arquivosDiretos": 2,
+   "fotosDiretas": 0,
+   "videosDiretos": 0,
+   "documentosDiretos": 2,
+   "link": "https://drive.google.com/drive/folders/1t1Sm4LhMLThlzwfMwRgASBZxkjW_gihf",
+   "origens": [
+    {
+     "id": "1t1Sm4LhMLThlzwfMwRgASBZxkjW_gihf",
+     "link": "https://drive.google.com/drive/folders/1t1Sm4LhMLThlzwfMwRgASBZxkjW_gihf",
+     "arquivos": 2
+    },
+    {
+     "id": "1LzkKbDFLaVNYop6AllULkYGXP5s9WouV",
+     "link": "https://drive.google.com/drive/folders/1LzkKbDFLaVNYop6AllULkYGXP5s9WouV",
+     "arquivos": 0
+    }
+   ]
+  },
+  {
+   "id": "1s8RKTNb1zPZGUBIO2xeGH9GhIJDyOOoc",
+   "territorio": "Rio das Pedras",
+   "categoria": "Seminários territoriais",
+   "competencia": "2026-08",
+   "rotulo": "M03 Seminario",
+   "arquivosDiretos": 0,
+   "fotosDiretas": 0,
+   "videosDiretos": 0,
+   "documentosDiretos": 0,
+   "link": "https://drive.google.com/drive/folders/1s8RKTNb1zPZGUBIO2xeGH9GhIJDyOOoc",
+   "origens": [
+    {
+     "id": "1s8RKTNb1zPZGUBIO2xeGH9GhIJDyOOoc",
+     "link": "https://drive.google.com/drive/folders/1s8RKTNb1zPZGUBIO2xeGH9GhIJDyOOoc",
+     "arquivos": 0
+    }
+   ]
+  },
+  {
+   "id": "1y_mAYRMcx12WSxdXN_HiJypzbdi-oIoV",
+   "territorio": "Rio das Pedras",
+   "categoria": "Seminários territoriais",
+   "competencia": "2026-09",
+   "rotulo": "01 Fotos E Videos",
+   "arquivosDiretos": 48,
+   "fotosDiretas": 48,
+   "videosDiretos": 0,
+   "documentosDiretos": 0,
+   "link": "https://drive.google.com/drive/folders/1y_mAYRMcx12WSxdXN_HiJypzbdi-oIoV",
+   "origens": [
+    {
+     "id": "1y_mAYRMcx12WSxdXN_HiJypzbdi-oIoV",
+     "link": "https://drive.google.com/drive/folders/1y_mAYRMcx12WSxdXN_HiJypzbdi-oIoV",
+     "arquivos": 48
+    }
+   ]
+  },
+  {
+   "id": "14Nz17ot4NTHt3IKQdHeJD_rXhT0juNN1",
+   "territorio": "Rio das Pedras",
+   "categoria": "Seminários territoriais",
+   "competencia": "2026-09",
+   "rotulo": "M03 Seminario",
+   "arquivosDiretos": 0,
+   "fotosDiretas": 0,
+   "videosDiretos": 0,
+   "documentosDiretos": 0,
+   "link": "https://drive.google.com/drive/folders/14Nz17ot4NTHt3IKQdHeJD_rXhT0juNN1",
+   "origens": [
+    {
+     "id": "14Nz17ot4NTHt3IKQdHeJD_rXhT0juNN1",
+     "link": "https://drive.google.com/drive/folders/14Nz17ot4NTHt3IKQdHeJD_rXhT0juNN1",
+     "arquivos": 0
+    },
+    {
+     "id": "1z_q85Qf-Ze25gGJkxr0EFC-ISfc8pAZk",
+     "link": "https://drive.google.com/drive/folders/1z_q85Qf-Ze25gGJkxr0EFC-ISfc8pAZk",
+     "arquivos": 0
+    }
+   ]
+  },
+  {
+   "id": "13X1_61YMwbgBft4nPbTw8RvV5lRnfNuj",
+   "territorio": "Rocinha",
+   "categoria": "Cursos e oficinas",
+   "competencia": "2026-07",
+   "rotulo": "Aula 01 2026-07-27 Saude E Ambientes Limpos",
+   "arquivosDiretos": 0,
+   "fotosDiretas": 0,
+   "videosDiretos": 0,
+   "documentosDiretos": 0,
+   "link": "https://drive.google.com/drive/folders/13X1_61YMwbgBft4nPbTw8RvV5lRnfNuj",
+   "origens": [
+    {
+     "id": "13X1_61YMwbgBft4nPbTw8RvV5lRnfNuj",
+     "link": "https://drive.google.com/drive/folders/13X1_61YMwbgBft4nPbTw8RvV5lRnfNuj",
+     "arquivos": 0
+    }
+   ]
+  },
+  {
+   "id": "1m6zu0oYMcQw368x9DEK6d38XwDy7KPQ3",
+   "territorio": "Rocinha",
+   "categoria": "Cursos e oficinas",
+   "competencia": "2026-07",
+   "rotulo": "Aula 02 2026-07-28 Educacao Ambiental",
+   "arquivosDiretos": 34,
+   "fotosDiretas": 23,
+   "videosDiretos": 11,
+   "documentosDiretos": 0,
+   "link": "https://drive.google.com/drive/folders/1m6zu0oYMcQw368x9DEK6d38XwDy7KPQ3",
+   "origens": [
+    {
+     "id": "1m6zu0oYMcQw368x9DEK6d38XwDy7KPQ3",
+     "link": "https://drive.google.com/drive/folders/1m6zu0oYMcQw368x9DEK6d38XwDy7KPQ3",
+     "arquivos": 34
+    }
+   ]
+  },
+  {
+   "id": "1fYacKtHH4w3lSMKwFF6Fq6d5gzAZFbrR",
+   "territorio": "Rocinha",
+   "categoria": "Cursos e oficinas",
+   "competencia": "2026-07",
+   "rotulo": "Aula 03 2026-07-29 Arte Urbana E Sustentabilidade",
+   "arquivosDiretos": 60,
+   "fotosDiretas": 47,
+   "videosDiretos": 13,
+   "documentosDiretos": 0,
+   "link": "https://drive.google.com/drive/folders/1fYacKtHH4w3lSMKwFF6Fq6d5gzAZFbrR",
+   "origens": [
+    {
+     "id": "1fYacKtHH4w3lSMKwFF6Fq6d5gzAZFbrR",
+     "link": "https://drive.google.com/drive/folders/1fYacKtHH4w3lSMKwFF6Fq6d5gzAZFbrR",
+     "arquivos": 60
+    }
+   ]
+  },
+  {
+   "id": "1B-wAQocogJw0Vs1Y38ebqROHT91HV4y-",
+   "territorio": "Rocinha",
+   "categoria": "Cursos e oficinas",
+   "competencia": "2026-07",
+   "rotulo": "Aula 04 2026-07-30 Mutiroes De Limpeza",
+   "arquivosDiretos": 38,
+   "fotosDiretas": 33,
+   "videosDiretos": 4,
+   "documentosDiretos": 1,
+   "link": "https://drive.google.com/drive/folders/1B-wAQocogJw0Vs1Y38ebqROHT91HV4y-",
+   "origens": [
+    {
+     "id": "1B-wAQocogJw0Vs1Y38ebqROHT91HV4y-",
+     "link": "https://drive.google.com/drive/folders/1B-wAQocogJw0Vs1Y38ebqROHT91HV4y-",
+     "arquivos": 38
+    }
+   ]
+  },
+  {
+   "id": "11cZaBtp5gcEQQxBppYXVhQViQX7UVkPn",
+   "territorio": "Rocinha",
+   "categoria": "Cursos e oficinas",
+   "competencia": "2026-07",
+   "rotulo": "Fotos",
+   "arquivosDiretos": 77,
+   "fotosDiretas": 67,
+   "videosDiretos": 10,
+   "documentosDiretos": 0,
+   "link": "https://drive.google.com/drive/folders/11cZaBtp5gcEQQxBppYXVhQViQX7UVkPn",
+   "origens": [
+    {
+     "id": "1Q7RM8Lknic4B2b0MXifKHyWgZkI75-Pe",
+     "link": "https://drive.google.com/drive/folders/1Q7RM8Lknic4B2b0MXifKHyWgZkI75-Pe",
+     "arquivos": 0
+    },
+    {
+     "id": "11cZaBtp5gcEQQxBppYXVhQViQX7UVkPn",
+     "link": "https://drive.google.com/drive/folders/11cZaBtp5gcEQQxBppYXVhQViQX7UVkPn",
+     "arquivos": 77
+    }
+   ]
+  },
+  {
+   "id": "1Yo6A3-kJ_ysNbBsMyTgpLlhMckrrpIQ8",
+   "territorio": "Rocinha",
+   "categoria": "Cursos e oficinas",
+   "competencia": "2026-07",
+   "rotulo": "M03 Cursos De Capacitacao",
+   "arquivosDiretos": 0,
+   "fotosDiretas": 0,
+   "videosDiretos": 0,
+   "documentosDiretos": 0,
+   "link": "https://drive.google.com/drive/folders/1Yo6A3-kJ_ysNbBsMyTgpLlhMckrrpIQ8",
+   "origens": [
+    {
+     "id": "1Yo6A3-kJ_ysNbBsMyTgpLlhMckrrpIQ8",
+     "link": "https://drive.google.com/drive/folders/1Yo6A3-kJ_ysNbBsMyTgpLlhMckrrpIQ8",
+     "arquivos": 0
+    },
+    {
+     "id": "1VEprtLDspZ5gnPdMxbX4D8JRqVVgMgB5",
+     "link": "https://drive.google.com/drive/folders/1VEprtLDspZ5gnPdMxbX4D8JRqVVgMgB5",
+     "arquivos": 0
+    }
+   ]
+  },
+  {
+   "id": "1ySnH8-sI4hOUFsyg_83KpI7k3apu1p33",
+   "territorio": "Rocinha",
+   "categoria": "Diagnósticos territoriais",
+   "competencia": "",
+   "rotulo": "02 Diagnosticos Territoriais",
+   "arquivosDiretos": 1,
+   "fotosDiretas": 0,
+   "videosDiretos": 0,
+   "documentosDiretos": 1,
+   "link": "https://drive.google.com/drive/folders/1ySnH8-sI4hOUFsyg_83KpI7k3apu1p33",
+   "origens": [
+    {
+     "id": "1ySnH8-sI4hOUFsyg_83KpI7k3apu1p33",
+     "link": "https://drive.google.com/drive/folders/1ySnH8-sI4hOUFsyg_83KpI7k3apu1p33",
+     "arquivos": 1
+    }
+   ]
+  },
+  {
+   "id": "1TsJS3RAnHeesy3xY5xOTFxI57FPMzjOg",
+   "territorio": "Rocinha",
+   "categoria": "Intervenções urbanas",
+   "competencia": "2026-09",
+   "rotulo": "01 Fotos E Videos",
+   "arquivosDiretos": 67,
+   "fotosDiretas": 61,
+   "videosDiretos": 6,
+   "documentosDiretos": 0,
+   "link": "https://drive.google.com/drive/folders/1TsJS3RAnHeesy3xY5xOTFxI57FPMzjOg",
+   "origens": [
+    {
+     "id": "1TsJS3RAnHeesy3xY5xOTFxI57FPMzjOg",
+     "link": "https://drive.google.com/drive/folders/1TsJS3RAnHeesy3xY5xOTFxI57FPMzjOg",
+     "arquivos": 67
+    }
+   ]
+  },
+  {
+   "id": "17oD4FIyux1XO8rdQUa6-d4XyCNYI4ND3",
+   "territorio": "Rocinha",
+   "categoria": "Intervenções urbanas",
+   "competencia": "2026-09",
+   "rotulo": "Hoje Dia 14 09 26",
+   "arquivosDiretos": 15,
+   "fotosDiretas": 12,
+   "videosDiretos": 3,
+   "documentosDiretos": 0,
+   "link": "https://drive.google.com/drive/folders/17oD4FIyux1XO8rdQUa6-d4XyCNYI4ND3",
+   "origens": [
+    {
+     "id": "17oD4FIyux1XO8rdQUa6-d4XyCNYI4ND3",
+     "link": "https://drive.google.com/drive/folders/17oD4FIyux1XO8rdQUa6-d4XyCNYI4ND3",
+     "arquivos": 15
+    },
+    {
+     "id": "1PDOXToQK6zS_X6cmJdtirfAKVsrcYxF2",
+     "link": "https://drive.google.com/drive/folders/1PDOXToQK6zS_X6cmJdtirfAKVsrcYxF2",
+     "arquivos": 0
+    }
+   ]
+  },
+  {
+   "id": "1hUGag4p9K8Pm3S8feUzpHKhrmtNyYe-3",
+   "territorio": "Rocinha",
+   "categoria": "Intervenções urbanas",
+   "competencia": "2026-09",
+   "rotulo": "Inicio Dia 8 09 26",
+   "arquivosDiretos": 23,
+   "fotosDiretas": 23,
+   "videosDiretos": 0,
+   "documentosDiretos": 0,
+   "link": "https://drive.google.com/drive/folders/1hUGag4p9K8Pm3S8feUzpHKhrmtNyYe-3",
+   "origens": [
+    {
+     "id": "1hUGag4p9K8Pm3S8feUzpHKhrmtNyYe-3",
+     "link": "https://drive.google.com/drive/folders/1hUGag4p9K8Pm3S8feUzpHKhrmtNyYe-3",
+     "arquivos": 13
+    },
+    {
+     "id": "1kBB4S5Dd7sSCZKIpJoflUhngU_qF7bLr",
+     "link": "https://drive.google.com/drive/folders/1kBB4S5Dd7sSCZKIpJoflUhngU_qF7bLr",
+     "arquivos": 10
+    }
+   ]
+  },
+  {
+   "id": "13PN2RWogyYA6cquGq0beOeoGJVYnt7YJ",
+   "territorio": "Rocinha",
+   "categoria": "Intervenções urbanas",
+   "competencia": "2026-09",
+   "rotulo": "M04 Intervencao Urbana",
+   "arquivosDiretos": 0,
+   "fotosDiretas": 0,
+   "videosDiretos": 0,
+   "documentosDiretos": 0,
+   "link": "https://drive.google.com/drive/folders/13PN2RWogyYA6cquGq0beOeoGJVYnt7YJ",
+   "origens": [
+    {
+     "id": "13PN2RWogyYA6cquGq0beOeoGJVYnt7YJ",
+     "link": "https://drive.google.com/drive/folders/13PN2RWogyYA6cquGq0beOeoGJVYnt7YJ",
+     "arquivos": 0
+    },
+    {
+     "id": "1C4pfpublJXRY7njLEPE5f99J2Z9xENBW",
+     "link": "https://drive.google.com/drive/folders/1C4pfpublJXRY7njLEPE5f99J2Z9xENBW",
+     "arquivos": 0
+    }
+   ]
+  },
+  {
+   "id": "13VVMvR-MazQAYYnXDA14QpVtB3pMOfxV",
+   "territorio": "Rocinha",
+   "categoria": "Intervenções urbanas",
+   "competencia": "2026-10",
+   "rotulo": "01 Fotos E Videos",
+   "arquivosDiretos": 23,
+   "fotosDiretas": 17,
+   "videosDiretos": 6,
+   "documentosDiretos": 0,
+   "link": "https://drive.google.com/drive/folders/13VVMvR-MazQAYYnXDA14QpVtB3pMOfxV",
+   "origens": [
+    {
+     "id": "13VVMvR-MazQAYYnXDA14QpVtB3pMOfxV",
+     "link": "https://drive.google.com/drive/folders/13VVMvR-MazQAYYnXDA14QpVtB3pMOfxV",
+     "arquivos": 23
+    }
+   ]
+  },
+  {
+   "id": "1eTtX6GsmMqH1FazAlvZXaSsX_ihGzc8K",
+   "territorio": "Rocinha",
+   "categoria": "Intervenções urbanas",
+   "competencia": "2026-10",
+   "rotulo": "M04 Intervencao Urbana",
+   "arquivosDiretos": 0,
+   "fotosDiretas": 0,
+   "videosDiretos": 0,
+   "documentosDiretos": 0,
+   "link": "https://drive.google.com/drive/folders/1eTtX6GsmMqH1FazAlvZXaSsX_ihGzc8K",
+   "origens": [
+    {
+     "id": "1eTtX6GsmMqH1FazAlvZXaSsX_ihGzc8K",
+     "link": "https://drive.google.com/drive/folders/1eTtX6GsmMqH1FazAlvZXaSsX_ihGzc8K",
+     "arquivos": 0
+    },
+    {
+     "id": "13BAETP5_qJ9v_42t6wTcKYi-pBf8zjYX",
+     "link": "https://drive.google.com/drive/folders/13BAETP5_qJ9v_42t6wTcKYi-pBf8zjYX",
+     "arquivos": 0
+    }
+   ]
+  },
+  {
+   "id": "1zhBb0QH385c12iihtnuDgHeofP5kT3RS",
+   "territorio": "Rocinha",
+   "categoria": "Pesquisas e diagnósticos",
+   "competencia": "2026-05",
+   "rotulo": "M02 Pesquisa De Campo",
+   "arquivosDiretos": 12,
+   "fotosDiretas": 12,
+   "videosDiretos": 0,
+   "documentosDiretos": 0,
+   "link": "https://drive.google.com/drive/folders/1zhBb0QH385c12iihtnuDgHeofP5kT3RS",
+   "origens": [
+    {
+     "id": "1zhBb0QH385c12iihtnuDgHeofP5kT3RS",
+     "link": "https://drive.google.com/drive/folders/1zhBb0QH385c12iihtnuDgHeofP5kT3RS",
+     "arquivos": 12
+    },
+    {
+     "id": "1JmDRastzhjvz71QVoSxEW4EV6f12Gxnd",
+     "link": "https://drive.google.com/drive/folders/1JmDRastzhjvz71QVoSxEW4EV6f12Gxnd",
+     "arquivos": 0
+    }
+   ]
+  },
+  {
+   "id": "1EerPSWaCN3XwJrXPeRAEWVTxc30G597v",
+   "territorio": "Rocinha",
+   "categoria": "Pesquisas e diagnósticos",
+   "competencia": "2026-05",
+   "rotulo": "M02 Pesquisa E Diagnostico",
+   "arquivosDiretos": 0,
+   "fotosDiretas": 0,
+   "videosDiretos": 0,
+   "documentosDiretos": 0,
+   "link": "https://drive.google.com/drive/folders/1EerPSWaCN3XwJrXPeRAEWVTxc30G597v",
+   "origens": [
+    {
+     "id": "1EerPSWaCN3XwJrXPeRAEWVTxc30G597v",
+     "link": "https://drive.google.com/drive/folders/1EerPSWaCN3XwJrXPeRAEWVTxc30G597v",
+     "arquivos": 0
+    }
+   ]
+  },
+  {
+   "id": "1Kt--ZXGjTXWg101FBEZx-HexTSQhkQ_8",
+   "territorio": "Rocinha",
+   "categoria": "Planos de aula",
+   "competencia": "2026-07",
+   "rotulo": "M03 Planos De Aula",
+   "arquivosDiretos": 1,
+   "fotosDiretas": 0,
+   "videosDiretos": 0,
+   "documentosDiretos": 1,
+   "link": "https://drive.google.com/drive/folders/1Kt--ZXGjTXWg101FBEZx-HexTSQhkQ_8",
+   "origens": [
+    {
+     "id": "1Kt--ZXGjTXWg101FBEZx-HexTSQhkQ_8",
+     "link": "https://drive.google.com/drive/folders/1Kt--ZXGjTXWg101FBEZx-HexTSQhkQ_8",
+     "arquivos": 1
+    },
+    {
+     "id": "16CFB0JLXouXyz919y4888oMM2LeJX0js",
+     "link": "https://drive.google.com/drive/folders/16CFB0JLXouXyz919y4888oMM2LeJX0js",
+     "arquivos": 0
+    }
+   ]
+  },
+  {
+   "id": "1neKfnz34jejT6LsxDil46N38-o35aPoL",
+   "territorio": "Rocinha",
+   "categoria": "Relatórios de gestão",
+   "competencia": "2026-05",
+   "rotulo": "M01 Relatorios De Gestao",
+   "arquivosDiretos": 1,
+   "fotosDiretas": 0,
+   "videosDiretos": 0,
+   "documentosDiretos": 1,
+   "link": "https://drive.google.com/drive/folders/1neKfnz34jejT6LsxDil46N38-o35aPoL",
+   "origens": [
+    {
+     "id": "1neKfnz34jejT6LsxDil46N38-o35aPoL",
+     "link": "https://drive.google.com/drive/folders/1neKfnz34jejT6LsxDil46N38-o35aPoL",
+     "arquivos": 1
+    },
+    {
+     "id": "1_DaSLOVP6DKNA0hcrfqKAg9beSaDTOfS",
+     "link": "https://drive.google.com/drive/folders/1_DaSLOVP6DKNA0hcrfqKAg9beSaDTOfS",
+     "arquivos": 0
+    }
+   ]
+  },
+  {
+   "id": "1YCuPRdbugItPVsa0lhkXkJcrIiuyf9XF",
+   "territorio": "Rocinha",
+   "categoria": "Relatórios de gestão",
+   "competencia": "2026-06",
+   "rotulo": "M01 Relatorios De Gestao",
+   "arquivosDiretos": 2,
+   "fotosDiretas": 0,
+   "videosDiretos": 0,
+   "documentosDiretos": 2,
+   "link": "https://drive.google.com/drive/folders/1YCuPRdbugItPVsa0lhkXkJcrIiuyf9XF",
+   "origens": [
+    {
+     "id": "1YCuPRdbugItPVsa0lhkXkJcrIiuyf9XF",
+     "link": "https://drive.google.com/drive/folders/1YCuPRdbugItPVsa0lhkXkJcrIiuyf9XF",
+     "arquivos": 2
+    },
+    {
+     "id": "1uJm1zsBL2oxRx1OgaSobALV2dSfubnty",
+     "link": "https://drive.google.com/drive/folders/1uJm1zsBL2oxRx1OgaSobALV2dSfubnty",
+     "arquivos": 0
+    }
+   ]
+  },
+  {
+   "id": "1WLbtNlKc_uR4ffxjFPUnUGDfPQimRlE9",
+   "territorio": "Rocinha",
+   "categoria": "Relatórios de gestão",
+   "competencia": "2026-07",
+   "rotulo": "M01 Relatorios De Gestao",
+   "arquivosDiretos": 1,
+   "fotosDiretas": 0,
+   "videosDiretos": 0,
+   "documentosDiretos": 1,
+   "link": "https://drive.google.com/drive/folders/1WLbtNlKc_uR4ffxjFPUnUGDfPQimRlE9",
+   "origens": [
+    {
+     "id": "1WLbtNlKc_uR4ffxjFPUnUGDfPQimRlE9",
+     "link": "https://drive.google.com/drive/folders/1WLbtNlKc_uR4ffxjFPUnUGDfPQimRlE9",
+     "arquivos": 1
+    },
+    {
+     "id": "1PKcdNeKL1PqJ8vUevW_lOG0oSHiEFwh2",
+     "link": "https://drive.google.com/drive/folders/1PKcdNeKL1PqJ8vUevW_lOG0oSHiEFwh2",
+     "arquivos": 0
+    }
+   ]
+  },
+  {
+   "id": "1vfXwJv74XLWg8UyJ3kIdjsRhrxJs2G-u",
+   "territorio": "Rocinha",
+   "categoria": "Seminários territoriais",
+   "competencia": "2026-08",
+   "rotulo": "M03 Seminario",
+   "arquivosDiretos": 0,
+   "fotosDiretas": 0,
+   "videosDiretos": 0,
+   "documentosDiretos": 0,
+   "link": "https://drive.google.com/drive/folders/1vfXwJv74XLWg8UyJ3kIdjsRhrxJs2G-u",
+   "origens": [
+    {
+     "id": "1vfXwJv74XLWg8UyJ3kIdjsRhrxJs2G-u",
+     "link": "https://drive.google.com/drive/folders/1vfXwJv74XLWg8UyJ3kIdjsRhrxJs2G-u",
+     "arquivos": 0
+    }
+   ]
+  },
+  {
+   "id": "1XzJp-x4sYhPJIyeXhHydNdVvNh71Cw-q",
+   "territorio": "Rocinha",
+   "categoria": "Seminários territoriais",
+   "competencia": "2026-08",
+   "rotulo": "M03 Seminario Preparacao",
+   "arquivosDiretos": 1,
+   "fotosDiretas": 0,
+   "videosDiretos": 0,
+   "documentosDiretos": 1,
+   "link": "https://drive.google.com/drive/folders/1XzJp-x4sYhPJIyeXhHydNdVvNh71Cw-q",
+   "origens": [
+    {
+     "id": "1XzJp-x4sYhPJIyeXhHydNdVvNh71Cw-q",
+     "link": "https://drive.google.com/drive/folders/1XzJp-x4sYhPJIyeXhHydNdVvNh71Cw-q",
+     "arquivos": 1
+    },
+    {
+     "id": "1c1AIZTQI5eBB7p-VzHscMnNbFmt7S-8q",
+     "link": "https://drive.google.com/drive/folders/1c1AIZTQI5eBB7p-VzHscMnNbFmt7S-8q",
+     "arquivos": 0
+    }
+   ]
+  },
+  {
+   "id": "17v_U2dZczeO3g0fc2LqmDdoV8pSsKg6q",
+   "territorio": "Rocinha",
+   "categoria": "Seminários territoriais",
+   "competencia": "2026-09",
+   "rotulo": "01 Fotos E Videos",
+   "arquivosDiretos": 90,
+   "fotosDiretas": 59,
+   "videosDiretos": 31,
+   "documentosDiretos": 0,
+   "link": "https://drive.google.com/drive/folders/17v_U2dZczeO3g0fc2LqmDdoV8pSsKg6q",
+   "origens": [
+    {
+     "id": "17v_U2dZczeO3g0fc2LqmDdoV8pSsKg6q",
+     "link": "https://drive.google.com/drive/folders/17v_U2dZczeO3g0fc2LqmDdoV8pSsKg6q",
+     "arquivos": 90
+    }
+   ]
+  },
+  {
+   "id": "1Um4bTlNIRxfSMZWdp94XBPyd069LiFeB",
+   "territorio": "Rocinha",
+   "categoria": "Seminários territoriais",
+   "competencia": "2026-09",
+   "rotulo": "M03 Seminario",
+   "arquivosDiretos": 0,
+   "fotosDiretas": 0,
+   "videosDiretos": 0,
+   "documentosDiretos": 0,
+   "link": "https://drive.google.com/drive/folders/1Um4bTlNIRxfSMZWdp94XBPyd069LiFeB",
+   "origens": [
+    {
+     "id": "1Um4bTlNIRxfSMZWdp94XBPyd069LiFeB",
+     "link": "https://drive.google.com/drive/folders/1Um4bTlNIRxfSMZWdp94XBPyd069LiFeB",
+     "arquivos": 0
+    },
+    {
+     "id": "11FeWE34J_XJc43IALrkS2HMVo6_C19dc",
+     "link": "https://drive.google.com/drive/folders/11FeWE34J_XJc43IALrkS2HMVo6_C19dc",
+     "arquivos": 0
+    }
+   ]
+  }
+ ],
+ "planilhaDeConformidade": "https://docs.google.com/spreadsheets/d/1a-zkJd6eVQHi5WKuQgpOrYQP2mXerQ1KUO9Qvk88ep8/edit",
+ "pastaOficial": "https://drive.google.com/drive/folders/1ASzZ7FAYbuU8rGomqlmBpq-QuRL8Ss52",
+ "tiposPrivadosNaoPublicados": [
+  "Listas de presença",
+  "Notas fiscais",
+  "Contratos",
+  "Orçamentos",
+  "Documentos com dados pessoais"
+ ]
+}
